@@ -12,7 +12,9 @@ This kind of book is an example of literate programming - the intertwining of ni
 
 But the `R` code cell below does not:
 
-```r
+```{r}
+#| eval: false
+
 summary(cars)
 ```
 
