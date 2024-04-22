@@ -10,7 +10,7 @@ Authors@R: c(
   )
   
 # [C] SET REPOSITORY URL
-URL: https://github.com/sipbs-compbiol/REPOSITORY
+URL: https://github.com/sipbs-compbiol/sipbs-compbiol-book-template
 
 # [D] SET REQUIRED PACKAGES IN R
 Depends: 
