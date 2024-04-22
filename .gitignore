@@ -6,6 +6,8 @@
 
 # Quarto support files
 /.quarto/
+README.html
+README_files/
 
 # Local Quarto output
 _book/
