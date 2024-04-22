@@ -34,9 +34,10 @@ This version of the template includes:
 8. Generate the book by issuing `quarto render` in the terminal, or using the `Render` button in `RStudio`
 9. Commit your updates in the local development environment
 10. Publish your book to GitHub Pages by issuing `quarto publish gh-pages` in the terminal
+11. When the pages have built on GitHub Pages, click on the `About` settings (the cog icon) to modify the page description and select `Use your GitHub Pages website`, to have the GitHub Pages site linked from the repository
 
 ### General Usage
 
-1. Make changes to the `.qmd` files, updating chapter information in `_quarto.yml`, as needed for your material
+1. Make changes to the `.qmd` files, updating chapter information in `_quarto.yml` and `R` package information in `DESCRIPTION`, as needed for your material
 2. Commit your changes locally to the git repository
 3. Push your changes to the GitHub repository
