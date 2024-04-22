@@ -20,9 +20,9 @@ Imports:
     ggplot2,
     flextable,
     kableExtra,
-    rmarkdown
+    rmarkdown,
+    knitr
 Suggests:
-    knitr,
     sessioninfo
 Remotes: tidyverse/dplyr
 Encoding: UTF-8
