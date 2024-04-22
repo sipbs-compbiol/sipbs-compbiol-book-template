@@ -19,7 +19,8 @@ Imports:
     tidyverse (>= 2.0.0),
     ggplot2,
     flextable,
-    kableExtra
+    kableExtra,
+    rmarkdown
 Suggests:
     knitr,
     sessioninfo
