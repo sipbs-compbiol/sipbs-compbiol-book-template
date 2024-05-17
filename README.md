@@ -41,3 +41,15 @@ This version of the template includes:
 1. Make changes to the `.qmd` files, updating chapter information in `_quarto.yml` and `R` package information in `DESCRIPTION`, as needed for your material
 2. Commit your changes locally to the git repository
 3. Push your changes to the GitHub repository
+
+### Using `WebR`
+
+[`WebR`](https://github.com/coatless/quarto-webr) provides a sandboxed version of `R` that runs in the browser. This enables us to write workshops that ask students to use `R` "live" without requiring an installation on their machine, thereby increasing accessibility and avoiding some technical issues.
+
+Being sandboxed, `WebR` has no interaction with the local filesystem, and there are limitations on the libraries that can be installed. There is no quick route around the library limitations, but we can provide example files for students to work with on their machines.
+
+#### Providing data for `WebR` exercises
+
+We need to make the datasets available in the workshop repository, and preload them on the exercise Quarto page in a `webr-r` cell with the `setup` context. An example can be seen at [https://github.com/sipbs-compbiol/BM214-Workshop-3/blob/main/exercise-03_reporter.qmd](https://github.com/sipbs-compbiol/BM214-Workshop-3/blob/main/exercise-03_reporter.qmd) where the `reporter_curves.csv` file is downloaded in the first `webr-r` cell.
+
+There is also an example in the `webr-example.qmd` `WebR` playground page, in this repository template.

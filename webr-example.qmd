@@ -10,6 +10,9 @@ filters:
 ```{webr-r}
 #| context: setup
 
+# Download reporter data
+download.file('https://raw.githubusercontent.com/sipbs-compbiol/BM214-Workshop-3/main/assets/data/reporter_curves.csv', 'reporter_curves.csv')
+
 library(ggplot2)
 library(palmerpenguins)
 library(tidyverse)
@@ -35,6 +38,17 @@ This `WebR` instance has three packages installed:
 - `palmerpenguins`
 
 Open the callout boxes below to see some examples you can try in the code cell above.
+
+::: { .callout-tip collapse="true }
+## Play with data from a GitHub repository
+
+One of our [BM214 workshops](https://sipbs-compbiol.github.io/BM214-Workshop-3/) involves a `WebR`-supported interactive exercise involving simulated reporter curves. We preload this data in the `setup` cell (see source code), and you can interact with it below with the code:
+
+```r
+data <- read.csv("reporter_curves.csv")
+glimpse(data)
+```
+:::
 
 ::: { .callout-tip collapse="true" }
 ## Investigate Palmer's Penguins
