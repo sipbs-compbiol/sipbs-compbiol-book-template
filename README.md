@@ -13,9 +13,10 @@ This version of the template includes:
 
 1. Click on the `Use This Template` button to create a new repository/project based on this template
 2. Make your new repository [public](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/managing-repository-settings/setting-repository-visibility)
-3. Clone or download the project to your local development environment
-4. Rename the `sipbs-compbiol-book-template.Rproj` file to suit your new repository's name
-5. Open the project folder and modify `_variables.yml` to change:
+3. Set your pages site to [render from the `gh-pages` branch](https://docs.github.com/en/pages/getting-started-with-github-pages/creating-a-github-pages-site)
+4. Clone or download the project to your local development environment
+5. Rename the `sipbs-compbiol-book-template.Rproj` file to suit your new repository's name
+6. Open the project folder and modify `_variables.yml` to change:
   - `[A]` academic year
   - `[B]` administrator name and contact information
   - `[C]` GitHub URLs for the repository
