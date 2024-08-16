@@ -12,9 +12,10 @@ This version of the template includes:
 ### Setting Up
 
 1. Click on the `Use This Template` button to create a new repository/project based on this template
-2. Clone or download the project to your local development environment
-3. Rename the `sipbs-compbiol-book-template.Rproj` file to suit your new repository's name
-4. Open the project folder and modify `_variables.yml` to change:
+2. Make your new repository [public](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/managing-repository-settings/setting-repository-visibility)
+3. Clone or download the project to your local development environment
+4. Rename the `sipbs-compbiol-book-template.Rproj` file to suit your new repository's name
+5. Open the project folder and modify `_variables.yml` to change:
   - `[A]` academic year
   - `[B]` administrator name and contact information
   - `[C]` GitHub URLs for the repository
