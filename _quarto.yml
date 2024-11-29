@@ -52,13 +52,15 @@ book:
 bibliography: references.bib
 
 # Formatting and theme; may not need to be changed
+# The custom-styles.css is added to provide custom callouts
+# These may be changed as desired for your project, or removed if unwanted
 format:
   html:
     theme: cosmo
     code-link: true
     
     author-meta: "Leighton Pritchard"
-  
+    css: custom-styles.css
   pdf:
     documentclass: scrreprt
 

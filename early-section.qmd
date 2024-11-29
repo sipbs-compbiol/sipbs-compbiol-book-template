@@ -1,3 +1,9 @@
 # Early Section {#sec-early .unnumbered}
 
 This `.qmd` file introduces a `Part` of the Quarto book. We use the `{#sec-REFERENCE}` option to make it cross-referenceable elsewhere in the text, and the `{.unnumbered}` option to avoid giving it a section number.
+
+We can add custom callout boxes like this: 
+
+::: {.callout-casestudy #casestudy-example title="Case Study: Bacterial Growth"}
+This is a custom-styled callout box about bacterial growth (with a title and referencable id). The custom callout styles can be changed in the custom-styles.css file.
+:::
