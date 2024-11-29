@@ -69,3 +69,32 @@ format:
 execute:
   freeze: auto
 
+# Add custom callouts
+custom-callout:
+  case-study:
+    title: "Case Study"
+    icon-symbol: "🔍"
+    color: "#FFA500"
+  data:
+    icon-symbol: "📊"
+    title: "Data Analysis"
+    color: "#32CD32"
+  discussion:
+    title: "Discussion Questions:"
+    icon-symbol: "✨"
+    color: "#BA55D3"
+  microbe:
+    title: "Microbe Profile"
+    icon-symbol: "🧫"
+    color: "#1E90FF"
+  thumbs-up:
+    title: "Great job!"
+    icon-symbol: "👍"
+    color: "#008000"
+  todo:
+    icon-symbol: "📝"
+    color: "pink"
+    
+
+filters:
+  - custom-callout
