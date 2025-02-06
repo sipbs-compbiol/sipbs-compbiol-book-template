@@ -34,10 +34,11 @@ This version of the template includes:
   - `[E]` licensing information
 6. Change or update the licence, if required
 7. Add the `quarto-webr` extension (if necessary) using the command `quarto add coatless/quarto-webr`
-8. Generate the book by issuing `quarto render` in the terminal, or using the `Render` button in `RStudio`
-9. Commit your updates in the local development environment
-10. Publish your book to GitHub Pages by issuing `quarto publish gh-pages` in the terminal
-11. When the pages have built on GitHub Pages, click on the `About` settings (the cog icon) to modify the page description and select `Use your GitHub Pages website`, to have the GitHub Pages site linked from the repository
+8. Add the `custom-callout` extension (if necessary) using the command `quarto add coatless-quarto/custom-callout`
+9. Generate the book by issuing `quarto render` in the terminal, or using the `Render` button in `RStudio`
+10. Commit your updates in the local development environment
+11. Publish your book to GitHub Pages by issuing `quarto publish gh-pages` in the terminal
+12. When the pages have built on GitHub Pages, click on the `About` settings (the cog icon) to modify the page description and select `Use your GitHub Pages website`, to have the GitHub Pages site linked from the repository
 
 ### General Usage
 
