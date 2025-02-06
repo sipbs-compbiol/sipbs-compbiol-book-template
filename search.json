@@ -20,6 +20,16 @@
     ]
   },
   {
+    "objectID": "early-section.html",
+    "href": "early-section.html",
+    "title": "Early Section",
+    "section": "",
+    "text": "This .qmd file introduces a Part of the Quarto book. We use the {#sec-REFERENCE} option to make it cross-referenceable elsewhere in the text, and the {.unnumbered} option to avoid giving it a section number.",
+    "crumbs": [
+      "Early Section"
+    ]
+  },
+  {
     "objectID": "early-section-topic.html",
     "href": "early-section-topic.html",
     "title": "2  Early Section Topic",
@@ -28,6 +38,16 @@
     "crumbs": [
       "Early Section",
       "<span class='chapter-number'>2</span>  <span class='chapter-title'>Early Section Topic</span>"
+    ]
+  },
+  {
+    "objectID": "late-section.html",
+    "href": "late-section.html",
+    "title": "Late Section",
+    "section": "",
+    "text": "This .qmd file introduces a Part of the Quarto book. We use the {#sec-REFERENCE} option to make it cross-referenceable elsewhere in the text, and the {.unnumbered} option to avoid giving it a section number.",
+    "crumbs": [
+      "Late Section"
     ]
   },
   {
@@ -71,26 +91,6 @@
     "text": "Knuth, Donald E. 1984. “Literate Programming.” Comput.\nJ. 27 (2): 97–111. https://doi.org/10.1093/comjnl/27.2.97.",
     "crumbs": [
       "References"
-    ]
-  },
-  {
-    "objectID": "early-section.html",
-    "href": "early-section.html",
-    "title": "Early Section",
-    "section": "",
-    "text": "This .qmd file introduces a Part of the Quarto book. We use the {#sec-REFERENCE} option to make it cross-referenceable elsewhere in the text, and the {.unnumbered} option to avoid giving it a section number.",
-    "crumbs": [
-      "Early Section"
-    ]
-  },
-  {
-    "objectID": "late-section.html",
-    "href": "late-section.html",
-    "title": "Late Section",
-    "section": "",
-    "text": "This .qmd file introduces a Part of the Quarto book. We use the {#sec-REFERENCE} option to make it cross-referenceable elsewhere in the text, and the {.unnumbered} option to avoid giving it a section number.",
-    "crumbs": [
-      "Late Section"
     ]
   }
 ]
