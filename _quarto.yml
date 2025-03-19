@@ -71,30 +71,41 @@ execute:
 
 # Add custom callouts
 custom-callout:
-  case-study:
+  callout-case-study:
     title: "Case Study"
     icon-symbol: "🔍"
     color: "#FFA500"
-  data:
+  callout-data:
     icon-symbol: "📊"
     title: "Data Analysis"
     color: "#32CD32"
-  discussion:
+  callout-discussion:
     title: "Discussion Questions:"
     icon-symbol: "✨"
     color: "#BA55D3"
-  microbe:
+  callout-microbe:
     title: "Microbe Profile"
     icon-symbol: "🧫"
     color: "#1E90FF"
-  thumbs-up:
+  callout-thumbs-up:
     title: "Great job!"
     icon-symbol: "👍"
     color: "#008000"
-  todo:
+  callout-todo:
     icon-symbol: "📝"
     color: "pink"
-    
+  callout-challenge:
+    title: "Challenge"
+    icon-symbol: "🧑‍🏫"
+    color: "aquamarine"
+  callout-question:
+    title: "Question"
+    icon-symbol: "🙋"
+    color: "yellow"
+  callout-questions:
+    title: "Questions"
+    icon-symbol: "🙋️"
+    color: "yellow"    
 
 filters:
   - custom-callout
