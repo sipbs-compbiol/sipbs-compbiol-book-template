@@ -24,7 +24,7 @@
     "href": "early-section.html",
     "title": "Early Section",
     "section": "",
-    "text": "This .qmd file introduces a Part of the Quarto book. We use the {#sec-REFERENCE} option to make it cross-referenceable elsewhere in the text, and the {.unnumbered} option to avoid giving it a section number.",
+    "text": "Discussion with a different title\nThis .qmd file introduces a Part of the Quarto book. We use the {#sec-REFERENCE} option to make it cross-referenceable elsewhere in the text, and the {.unnumbered} option to avoid giving it a section number.\nWe can add custom callout boxes like this:\nLet’s talk about something else",
     "crumbs": [
       "Early Section"
     ]
