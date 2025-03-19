@@ -61,8 +61,8 @@ format:
     
     author-meta: "Leighton Pritchard"
     css: custom-styles.css
-  pdf:
-    documentclass: scrreprt
+#  pdf:
+#    documentclass: scrreprt
 
 # Freeze output before pushing modifications to the repository when publishing
 # Should not need changing
