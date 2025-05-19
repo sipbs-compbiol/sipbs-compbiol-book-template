@@ -1,0 +1,148 @@
+# Quiz
+
+This page demonstrates the setup of a `naquiz` multiple-choice quiz. The advantage of this extension is that we don't need to use a Shiny server.
+
+- [`naquiz`](https://github.com/nareal/naquiz)
+
+
+## Basic MCQ
+
+The MCQ below is coded as:
+
+```markdown
+:::::{.question}
+Bill Gates was the founder of:
+
+::::{.choices}
+
+:::{.choice}
+Apple
+:::  
+
+:::{.choice .correct-choice}
+Microsoft
+:::
+
+:::{.choice}
+Facebook  
+:::
+
+:::{.choice}
+Google   
+:::
+
+::::
+:::::
+
+```
+
+:::::{.question}
+Bill Gates was the founder of:
+
+::::{.choices}
+
+:::{.choice}
+Apple
+:::  
+
+:::{.choice .correct-choice}
+Microsoft
+:::
+
+:::{.choice}
+Facebook  
+:::
+
+:::{.choice}
+Google   
+:::
+
+::::
+:::::
+
+## MCQ in callout
+
+We can use the `callout-question` callout to make the MCQ stand out a bit more.
+
+```markdown
+:::::{.question}
+Bill Gates was the founder of:
+
+::::{.choices}
+
+:::{.choice}
+Apple
+:::  
+
+:::{.choice .correct-choice}
+Microsoft
+:::
+
+:::{.choice}
+Facebook  
+:::
+
+:::{.choice}
+Google   
+:::
+
+:::{.button-clear title="Clear answer" button-class="btn btn-light btn-xs"}
+:::
+
+::::
+:::::
+
+::::{.btn-group}
+:::{.button-hint title="Show hint" button-class="btn btn-danger btn-xs"}
+The company name starts with an 'M'...
+:::
+
+:::{.button-answer title="Show Answer" button-class="btn btn-info btn-xs"}
+Bill Gates and Paul Allen founded Microsoft on April 4, 1975.
+:::
+::::
+
+
+```
+
+::: { .callout-question }
+
+:::::{.question}
+Bill Gates was the founder of:
+
+::::{.choices}
+
+:::{.choice}
+Apple
+:::  
+
+:::{.choice .correct-choice}
+Microsoft
+:::
+
+:::{.choice}
+Facebook  
+:::
+
+:::{.choice}
+Google   
+:::
+
+:::{.button-clear title="Clear answer" button-class="btn btn-light btn-xs"}
+:::
+
+::::
+:::::
+
+::::{.btn-group}
+:::{.button-hint title="Show hint" button-class="btn btn-warning btn-xs"}
+The company name starts with an 'M'...
+:::
+
+:::{.button-answer title="Show Answer" button-class="btn btn-info btn-xs"}
+Bill Gates and Paul Allen founded Microsoft on April 4, 1975.
+:::
+::::
+
+
+:::
