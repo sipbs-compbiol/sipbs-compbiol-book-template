@@ -44,6 +44,7 @@ book:
     
     - part: late-section.qmd
       chapters: 
+        - quiz.qmd
         - webr-example.qmd
     
     - references.qmd
@@ -109,3 +110,4 @@ custom-callout:
 
 filters:
   - custom-callout
+  - naquiz
