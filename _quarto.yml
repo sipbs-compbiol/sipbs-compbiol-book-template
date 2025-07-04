@@ -62,8 +62,6 @@ format:
     
     author-meta: "Leighton Pritchard"
     #css: custom-styles.css
-  pdf:
-    documentclass: scrreprt
   epub:
     cover-image: cover.png
   docx:

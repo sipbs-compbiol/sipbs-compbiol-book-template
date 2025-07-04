@@ -16,3 +16,7 @@ _freeze/
 
 # macOS cruft
 .DS_Store
+
+# LaTeX build intermediates/output
+*.log
+index.tex
