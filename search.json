@@ -4,7 +4,17 @@
     "href": "index.html",
     "title": "THE TITLE OF THE BOOK",
     "section": "",
-    "text": "Preface\nThis is a Quarto book, generated using the sipbs-compbiol-book-template GitHub template.\nThe Preface page is intended as a frontispiece with brief introductory information about the book and, maybe, its authors.\nTo learn more about Quarto books visit https://quarto.org/docs/books.",
+    "text": "Preface\nThis is a Quarto book, generated using the sipbs-compbiol-book-template GitHub template.\nThe index.qmd file provides this Preface page, which is intended as a frontispiece with brief introductory information about the book and its contents and scope and, maybe, its authors. To change the main text and content you see here (the content in the middle section of the page), you need to edit the index.qmd file.",
+    "crumbs": [
+      "Preface"
+    ]
+  },
+  {
+    "objectID": "index.html#how-this-page-is-structured",
+    "href": "index.html#how-this-page-is-structured",
+    "title": "THE TITLE OF THE BOOK",
+    "section": "How this page is structured",
+    "text": "How this page is structured\n\nSection headers\nSection headers are written in [Markdown] using hash/pound signs:\n## This is a (level two) section header.\n### This is a (level three) section header\n\nTo learn more about sections and headers, see this quick guide to Markdown basics.\n\n\n\n\n\n\n\nChanging title and author information, or the cover image (click to expand)\n\n\n\n\n\nThe book title, author, date, and cover image are specified in the _quarto.yml. To change this information, edit that file, and re-render the page.\nbook:\n  title: \"THE TITLE OF THE BOOK\"\n  author: \"AUTHOR NAME\"\n  date: \"DD/MM/YY\"\n  cover-image: sipbs_compbio_800.png\n\n\n\n\n\nCallout blocks\nCallout blocks, like the ones above, are highlighted regions of the document which carry a title, icon and colour, which may indicate the kind of information the callout contains. For example:\n\n\n\n\n\n\nWarning\n\n\n\nThis is a warning block. To insert a block like this, use:\n::: { .callout-warning }\nThe text of the callout goes here\n:::\n\n\n\n\n\n\n\n\nCaution (click to expand)\n\n\n\n\n\nThis is a caution block, which is collapsible when rendered as HTML/webpage but appears in full in the Word document. To make a callout collapsible, use collapse=\"true\" as in the example below. This places a dropdown icon to the right of the title bar, which controls expansion.\n::: { .callout-caution collapse=\"true\" title=\"Caution (click to expand)\"}\nThis is a collapsible caution block. The callout content goes here.\n:::\nNotice also that the title of the callout is specified between the curly braces as title=\"Caution (click to expand)\".\n\n\n\nYou can learn more about callout blocks in the Quarto documentation.",
     "crumbs": [
       "Preface"
     ]
