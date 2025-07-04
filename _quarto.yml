@@ -61,9 +61,13 @@ format:
     code-link: true
     
     author-meta: "Leighton Pritchard"
-    css: custom-styles.css
-#  pdf:
-#    documentclass: scrreprt
+    #css: custom-styles.css
+  pdf:
+    documentclass: scrreprt
+  epub:
+    cover-image: cover.png
+  docx:
+    author-meta: "Leighton Pritchard"
 
 # Freeze output before pushing modifications to the repository when publishing
 # Should not need changing
