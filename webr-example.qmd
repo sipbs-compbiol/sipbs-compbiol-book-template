@@ -122,7 +122,6 @@ fig <- ggplot(penguins, aes(x=body_mass_g, y=flipper_length_mm, colour=species))
          geom_smooth(method="lm")
 fig
 ```
-
 :::
 
 ::: { .callout-note }
@@ -136,6 +135,4 @@ You can see a full list by running the command
 ```r
 library(help = "datasets")
 ```
-
-
 :::
