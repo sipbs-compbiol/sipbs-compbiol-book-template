@@ -42,7 +42,7 @@ book:
       chapters: 
         - early-section-topic.qmd
     
-    - part: late-section.qmd
+    - part: example_pages.qmd
       chapters: 
         - quiz.qmd
         - webr-example.qmd
@@ -59,7 +59,6 @@ format:
   html:
     theme: cosmo
     code-link: true
-    
     author-meta: "Leighton Pritchard"
     #css: custom-styles.css
   epub:

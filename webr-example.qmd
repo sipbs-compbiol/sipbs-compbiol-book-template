@@ -5,7 +5,7 @@ filters:
   - webr
 ---
 
-# `R` Playground
+# `WebR` Playground
 
 ```{webr-r}
 #| context: setup
