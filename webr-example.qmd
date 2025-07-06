@@ -1,6 +1,6 @@
 ---
 webr:
-  packages: ["ggplot2", "tidyverse", "palmerpenguins", "GGally"]
+  packages: ["tidyverse", "palmerpenguins"]
 filters:
   - webr
 ---
@@ -13,118 +13,105 @@ filters:
 # Download reporter data
 download.file('https://raw.githubusercontent.com/sipbs-compbiol/BM214-Workshop-3/main/assets/data/reporter_curves.csv', 'reporter_curves.csv')
 
-library(ggplot2)
 library(palmerpenguins)
 library(tidyverse)
 ```
 
 ## Introduction
 
-This page provides a `WebR` cell for you to use as a playground to experiment with some example datasets. You can use this page to explore data management and visualisation in `R`.
+This page provides a `WebR` cell for use as a playground to experiment with example datasets, and describes how to include `WebR` on other Quarto pages.
 
 ## Playground
 
+::: {.panel-tabset}
+
+## Appearance
+
 ```{webr-r}
-# Use this WebR cell to experiment with some practice biological datasets
+# Use this WebR cell to experiment with using R. You can do almost anything
+# by typing in this code cell that you can do in R, including plotting graphs.
+#
+# Why not try the command:
+#
+# plot(penguins)
+#
+# and click the "Run code" icon?
+
 ```
 
-## Things you can do
+## Markdown
 
-This `WebR` instance has three packages installed:
+~~~markdown
+```{webr-r}
+# Use this WebR cell to experiment with using R. You can do almost anything
+# by typing in this code cell that you can do in R, including plotting graphs.
+#
+# Why not try the command:
+#
+# plot(penguins)
+#
+# and click the "Run code" icon?
 
-- `ggplot2`
-- `GGally`
-- `tidyverse`
-- `palmerpenguins`
-
-Open the callout boxes below to see some examples you can try in the code cell above.
-
-::: { .callout-tip collapse="true }
-## Play with data from a GitHub repository
-
-One of our [BM214 workshops](https://sipbs-compbiol.github.io/BM214-Workshop-3/) involves a `WebR`-supported interactive exercise involving simulated reporter curves. We preload this data in the `setup` cell (see source code), and you can interact with it below with the code:
-
-```r
-data <- read.csv("reporter_curves.csv")
-glimpse(data)
 ```
+~~~
+
 :::
 
-::: { .callout-tip collapse="true" }
-## Investigate Palmer's Penguins
 
-The `penguins` dataset contains data about three different species of penguins. Take a look at the format of the dataset:
+## Things you might do
 
-```r
-glimpse(penguins)
-```
+::: {.panel-tabset}
 
-You'll see there are eight variables, including `species`, `weight`, `sex`, etc. - some of these variables are _categorical_ (i.e. a category, like `species`), and others are _continuous_ (i.e. numerical). You can see a visual overview of how the data is related using the `plot()` function:
+## Palmer Penguins
+
+The `penguins` dataset contains data about three different species of penguins. You can use the `R` commands below to investigate the data:
 
 ```r
-plot(penguins)
-```
+glimpse(penguins)  # look at the format of the dataset
+plot(penguins)     # plot a visual overview of the dataset
 
-We can visualise the number of penguins of each species in a bar chart:
+# Plot the count of penguins in each species as a bar chart
+ggplot(penguins, aes(species, fill=species)) + geom_bar()
 
-```r
-fig <- ggplot(penguins, aes(species, fill=species)) +
-         geom_bar()
-fig
-```
+# Break down the distribution by species in a facet plot
+ggplot(penguins, aes(species, fill=species)) + geom_bar() + facet_wrap(~sex)
 
-And break this down in a facet plot, by sex:
+# Make a box and whisker plot of penguin body mass by species:
+ggplot(penguins, aes(x=species, y=body_mass_g, fill=species)) + geom_boxplot()
 
-```r
-fig <- ggplot(penguins, aes(species, fill=species)) +
-         geom_bar() +
-         facet_wrap(~sex)
-fig
-```
+# Plot the body mass for each sex side-by-side
+ggplot(penguins, aes(x=species, y=body_mass_g, fill=sex)) + geom_boxplot()
 
-We can make a box and whisker plot of penguin body mass by species:
+# Investigate correlation between body mass and flipper length:
+ggplot(penguins, aes(x=body_mass_g, y=flipper_length_mm)) + geom_point()
 
-```r
-fig <- ggplot(penguins, aes(x=species, y=body_mass_g, fill=species)) +
-         geom_boxplot()
-fig
-```
-
-And plot the body mass for each sex side-by-side
-
-```r
-fig <- ggplot(penguins, aes(x=species, y=body_mass_g, fill=sex)) +
-         geom_boxplot()
-fig
-```
-
-We can investigate correlations, such as between body mass and flipper length:
-
-```r
-fig <- ggplot(penguins, aes(x=body_mass_g, y=flipper_length_mm)) +
+# Colour datapoints by species:
+ggplot(penguins, aes(x=body_mass_g, y=flipper_length_mm, colour=species)) +
          geom_point()
-fig
-```
 
-We can colour datapoints by species:
-
-```r
-fig <- ggplot(penguins, aes(x=body_mass_g, y=flipper_length_mm, colour=species)) +
-         geom_point()
-fig
-```
-
-And fit a linear regression to each species separately:
-
-```r
-fig <- ggplot(penguins, aes(x=body_mass_g, y=flipper_length_mm, colour=species)) +
+# Fit a linear regression to each species separately:
+ggplot(penguins, aes(x=body_mass_g, y=flipper_length_mm, colour=species)) +
          geom_point() +
          geom_smooth(method="lm")
-fig
 ```
-:::
 
-::: { .callout-note }
+## Plot reported curves
+
+One of our [BM214 workshops](https://sipbs-compbiol.github.io/BM214-Workshop-3/) involves a `WebR`-supported interactive exercise involving simulated reporter curves.
+
+```r
+# Load reporter experiment data
+data <- read.csv("reporter_curves.csv")
+
+glimpse(data)  # Summarise the data format
+
+# Plot absorbance against concentration as a facet plot
+ggplot(data, aes(x=conc, y=abs_ratio, color=sample)) + geom_point() +
+  geom_line() + facet_wrap(~sample)
+```
+
+## Other datasets
+
 `R` comes with a number of example datasets you can practice with, including:
 
 - `mtcars`: fuel consumption and other statistic for 32 automobiles
@@ -136,3 +123,73 @@ You can see a full list by running the command
 library(help = "datasets")
 ```
 :::
+
+## Setting up `WebR`
+
+There are three important elements to including `WebR` on a Quarto page: the YAML header, the setup code block, and the `WebR` cell.
+
+You can see an example of how to set up `WebR` on any Quarto page by inspecting the `.qmd` source for this page.
+
+### YAML header
+
+To use `WebR` on a Quarto page, you need to include an appropriate YAML header at the top of the page:
+
+```markdown
+---
+webr:
+  packages: ["tidyverse", "palmerpenguins"]
+filters:
+  - webr
+---
+```
+
+Packages to be imported into `WebR` should be specified in the list, as `tidyverse` and `palmerpenguins` are, here. The `webr` filter must be loaded.
+
+### `WebR` setup block
+
+There is a special `R` code block needed to prepare the `WebR` instance. For this page, the code block
+
+~~~r
+```{webr-r}
+#| context: setup
+
+# Download reporter data
+download.file('https://raw.githubusercontent.com/sipbs-compbiol/BM214-Workshop-3/main/assets/data/reporter_curves.csv', 'reporter_curves.csv')
+
+library(palmerpenguins)
+library(tidyverse)
+```
+~~~
+
+declares that it has the `setup` context, so will be run when the `WebR` instance starts. The `download.file()` call pulls the `reporter_curves.csv` file from a GitHub repository, and makes it available in `WebR`, as if it were a real file, with the name `reporter_curves.csv`. The last three lines import `R` packages into the `WebR` environment.
+
+### The `WebR` code cell
+
+The minimal `WebR` code cell looks like this:
+
+~~~markdown
+```{webr-r}
+```
+~~~
+
+but it is more helpful, and more usual, to include some example code or comments, as in the example below:
+
+::: {.panel-tabset}
+
+## Appearance
+
+```{webr-r}
+# You can use `R` as a calculator
+
+1 * sin(1)
+```
+
+## Markdown
+
+~~~markdown
+```{webr-r}
+# You can use `R` as a calculator
+
+1 * sin(1)
+```
+~~~
