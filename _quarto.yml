@@ -64,7 +64,10 @@ format:
   epub:
     cover-image: cover.png
   docx:
-    author-meta: "Leighton Pritchard"
+    cover-image: cover.png
+    toc-depth: 1
+    link-citations: true
+    link-bibliography: true
 
 # Freeze output before pushing modifications to the repository when publishing
 # Should not need changing

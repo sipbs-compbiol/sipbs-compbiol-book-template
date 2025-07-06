@@ -425,3 +425,123 @@ Bill Gates and Paul Allen founded Microsoft on April 4, 1975.
 :::
 ```
 :::
+
+### Randomising question values
+
+We can use `R` or `Python` to generate random values that can be used to compose questions that are different each time the page is rendered, by inserting a suitable `R`/`Python` code block and using the values in the question.
+
+::: { .callout-caution }
+The values do **not** change when the page is reloaded by a reader. The values are calculated when the pages are rendered.
+
+For values that change when the page is refreshed, or on demand, use an `R` [Shiny](https://shiny.posit.co/r/getstarted/shiny-basics/lesson1/) or [Shinylive](https://posit-dev.github.io/r-shinylive/) solution, or a solution like [Numbas](https://www.numbas.org.uk/).
+:::
+
+```{r}
+#| show: false
+#| echo: false
+
+x_val <- sample(1:10, 1)
+y_val <- sample(11:20, 1)
+```
+
+::: { .panel-tabset }
+
+## Appearance
+
+::: { .callout-question }
+
+:::::{.question}
+What is the sum of `r x_val` and `r y_val`?
+
+::::{.choices}
+
+:::{.choice}
+`r x_val - y_val`
+:::  
+
+:::{.choice .correct-choice}
+`r x_val + y_val`
+:::
+
+:::{.choice}
+`r y_val - x_val`
+:::
+
+:::{.choice}
+`r y_val * x_val`
+:::
+
+:::{.button-clear title="Clear answer" button-class="btn btn-xs"}
+:::
+
+::::
+:::::
+
+::::{.btn-group}
+:::{.button-hint title="Show hint" button-class="btn btn-xs"}
+You need to add the two numbers `r x_val` and `r y_val`
+:::
+
+:::{.button-answer title="Show Answer" button-class="btn btn-xs"}
+`r x_val` + `r y_val` = `r x_val + y_val`
+:::
+::::
+
+:::
+
+## Markdown
+
+```markdown
+::: { .callout-question }
+
+:::::{.question}
+What is the sum of `r knitr::inline_expr("x_val")` and `r knitr::inline_expr("y_val")`?
+
+::::{.choices}
+
+:::{.choice}
+`r knitr::inline_expr("x_val - y_val")`
+:::  
+
+:::{.choice .correct-choice}
+`r knitr::inline_expr("x_val + y_val")`
+:::
+
+:::{.choice}
+`r knitr::inline_expr("y_val - x_val")`
+:::
+
+:::{.choice}
+`r knitr::inline_expr("y_val * x_val")`
+:::
+
+:::{.button-clear title="Clear answer" button-class="btn btn-xs"}
+:::
+
+::::
+:::::
+
+::::{.btn-group}
+:::{.button-hint title="Show hint" button-class="btn btn-xs"}
+You need to add the two numbers `r knitr::inline_expr("x_val")` and `r knitr::inline_expr("y_val")`
+:::
+
+:::{.button-answer title="Show Answer" button-class="btn btn-xs"}
+`r knitr::inline_expr("x_val")` + `r knitr::inline_expr("y_val")` = `r knitr::inline_expr("x_val + y_val")`
+:::
+::::
+
+:::
+```
+
+## R code
+
+```r
+#| show: false
+#| echo: false
+
+x_val <- sample(1:10, 1)
+y_val <- sample(11:20, 1)
+```
+
+:::
