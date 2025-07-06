@@ -98,37 +98,83 @@ We have defined the custom callouts below:
 
 ::: { .callout-case-study }
 For describing case studies
+
+```markdown
+::: { .callout-case-study }
+For describing case studies
+:::
+```
 :::
 
 ::: { .callout-challenge }
 For presenting a challenge to readers
+```markdown
+::: { .callout-challenge }
+For presenting a challenge to readers
+:::
+```
 :::
 
 ::: { .callout-data }
 For describing datasets and data analysis
+```markdown
+::: { .callout-data }
+For describing datasets and data analysis
+:::
+```
 :::
 
 ::: { .callout-discussion }
 For introducing discussion points
-::::
+```markdown
+::: { .callout-discussion }
+For introducing discussion points
+:::
+```
+:::
 
 ::: { .callout-microbe }
 For summarising the properties of a microbe
+```markdown
+::: { .callout-microbe }
+For summarising the properties of a microbe
+:::
+```
 :::
 
 ::: { .callout-question }
 For presenting a single question to readers
+```markdown
+::: { .callout-question }
+For presenting a single question to readers
+:::
+```
 :::
 
 ::: { .callout-questions }
 For presenting multiple questions to readers
+```markdown
+::: { .callout-questions }
+For presenting multiple questions to readers
+:::
+```
 :::
 
 
 ::: { .callout-thumbs-up }
 For general encouragement
+```markdown
+::: { .callout-thumbs-up }
+For general encouragement
+:::
+```
 :::
 
 ::: { .callout-todo }
 For highlighting where we still need to do some work
+```markdown
+::: { .callout-todo }
+For highlighting where we still need to do some work
+:::
+```
 :::
