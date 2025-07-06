@@ -46,6 +46,7 @@ book:
       chapters: 
         - quiz.qmd
         - webr-example.qmd
+        - callouts.qmd
     
     - references.qmd
 
