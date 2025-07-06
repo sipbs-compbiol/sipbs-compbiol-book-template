@@ -19,7 +19,9 @@ library(tidyverse)
 
 ## Introduction
 
-This page provides a `WebR` cell for use as a playground to experiment with example datasets, and describes how to include `WebR` on other Quarto pages.
+This page provides a [`WebR`](https://docs.r-wasm.org/webr/latest/) cell for use as a playground to experiment with example datasets, and describes how to include `WebR` on other Quarto pages.
+
+- [`WebR` documentation](https://docs.r-wasm.org/webr/latest/)
 
 ## Playground
 
@@ -58,7 +60,7 @@ This page provides a `WebR` cell for use as a playground to experiment with exam
 :::
 
 
-## Things you might do
+## Examples to try
 
 ::: {.panel-tabset}
 
@@ -95,9 +97,11 @@ ggplot(penguins, aes(x=body_mass_g, y=flipper_length_mm, colour=species)) +
          geom_smooth(method="lm")
 ```
 
-## Plot reported curves
+## Plot reporter curves
 
 One of our [BM214 workshops](https://sipbs-compbiol.github.io/BM214-Workshop-3/) involves a `WebR`-supported interactive exercise involving simulated reporter curves.
+
+Here, we have downloaded some data from the online repository and made it available as though it was a dataset on the filesystem, `reporter_curves.csv`.
 
 ```r
 # Load reporter experiment data
@@ -115,7 +119,7 @@ ggplot(data, aes(x=conc, y=abs_ratio, color=sample)) + geom_point() +
 `R` comes with a number of example datasets you can practice with, including:
 
 - `mtcars`: fuel consumption and other statistic for 32 automobiles
-- `Titanic`: information on the fate of passengers on the fatal maiden voyage of the ocean liner _Titanic_
+- `Titanic`: the fates of passengers from the maiden voyage of the ocean liner _Titanic_
  
 You can see a full list by running the command
 
@@ -161,7 +165,7 @@ library(tidyverse)
 ```
 ~~~
 
-declares that it has the `setup` context, so will be run when the `WebR` instance starts. The `download.file()` call pulls the `reporter_curves.csv` file from a GitHub repository, and makes it available in `WebR`, as if it were a real file, with the name `reporter_curves.csv`. The last three lines import `R` packages into the `WebR` environment.
+declares that it has the `setup` context, so will be run when the `WebR` instance starts. The `download.file()` call pulls the `reporter_curves.csv` file from a GitHub repository and makes it available in `WebR`, as if it were a real file, with the name `reporter_curves.csv`. The last three lines import `R` packages into the `WebR` environment.
 
 ### The `WebR` code cell
 
