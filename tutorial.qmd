@@ -1,0 +1,58 @@
+# ReadMe- more detailed version
+
+This is a more step-by-step tutorial for how you can use the `sipbs-compbiol-book-template` GitHub template. It follows the basic steps outlined in the README file.
+
+## Step 1: Set up your new repository
+
+1. Click on the green `Use This Template` button at the top right of the `sipbs-compbiol-book-template` GitHub page. [You will only see this button if you are signed into your GitHub account - if you need help getting started with a GitHub account, [add link]]
+
+![Setting up your new repository - click the button indicated by the purple square](images/fig1.png)
+
+2. On the drop-down menu that will appear, click on `Create a new repository`
+
+This will bring you to a page where you will need to enter some details about your new repository. 
+
+![Create a new repository page](images/fig2.png)
+
+- You will want to give your repository a unique, descriptive name.
+
+- You may want to add a brief description, explaining the purpose of your new repository.
+
+- You can keep the other options as the defaults shown (you do not need to tick the button `Include all branches`; you should keep the repository status as `Public`).
+
+When you are satisfied that the details for creating your new repository are correct, click the green `Create repository` button.
+
+It will take a few seconds for GitHub to generate your new repository, and then it should automatically take you to its page.
+
+3. Set your pages site to render from the `gh-pages` branch as follows:
+
+- On your repository page, click the `branches` button (will normally say `main` at the beginning.) In the search bar, where it says `Find or create a branch...` type `gh-pages` and then click `Create branch **gh-pages** from **main**`
+
+- Then click on the `Settings` link at the top right of the menu on your GitHub repository.
+
+- In the `Settings` page, click on `Pages` in the left-hand menu. 
+![GitHub repository settings - Pages](images/fig3.png)
+
+Check that your settings are correct: 
+
+Under `Build and deployment`, the Source should be `Deploy from a branch` and the `Branch` should be your new `gh-pages` branch.
+
+4. Clone or download the project to your local development environment [Note, these particular instructions are for using RStudio; if using another development environment, you will need to proceed differently]
+
+On your GitHub repository page, click the green button labelled "Code" (highlighted with a purple box in the figure below.)
+
+![Clone your GitHub Repository - click the "Code" box highlighted iwth the purple square](images/fig4.png)
+
+A URL will appear, with an option to copy the URL to your clipboard. Copy this URL.
+
+Working in R Studio, click on "File" in the menu, and then click `New Project`. 
+
+A menu will appear with options for creating a project. You should select the option `Version Control` to `Checkout a project from a version control repository`.
+
+In the next menu, `Create Project from Version Control`, select `Git`.
+
+Enter the URL you copied from your GitHub page, into the space provided for the `Repository URL`. 
+
+Specify an appropriate `Project directory name` and specify where this project should be saved (`Create project as subdirectory of` - note, make sure that you save your project somewhere you will be able to find it again).
+
+Click `Create Project`. 
