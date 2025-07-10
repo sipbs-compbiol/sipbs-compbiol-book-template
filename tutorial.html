@@ -8,7 +8,7 @@
 
 <meta name="author" content="Leighton Pritchard">
 
-<title>5&nbsp; Custom Callouts – THE TITLE OF THE BOOK</title>
+<title>6&nbsp; ReadMe- more detailed version – THE TITLE OF THE BOOK</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -21,41 +21,6 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-/* CSS for syntax highlighting */
-html { -webkit-text-size-adjust: 100%; }
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
-}
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-  }
-pre.numberSource { margin-left: 3em;  padding-left: 4px; }
-div.sourceCode
-  {   }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
-}
 </style>
 
 
@@ -66,8 +31,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./tutorial.html" rel="next">
-<link href="./webr-example.html" rel="prev">
+<link href="./references.html" rel="next">
+<link href="./callouts.html" rel="prev">
 <link href="./icon_32.png" rel="icon" type="image/png">
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
@@ -108,17 +73,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   }
 }</script>
 <style>
-div.callout-callout-data.callout {
-  border-left-color: #32CD32;
-}
-div.callout-callout-data.callout-style-default > .callout-header {
-  background-color: rgba(50, 205, 50, 0.13);
-}
-div.callout-callout-data .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
-div.callout-callout-data.callout-style-default .callout-icon::before, div.callout-callout-data.callout-titled .callout-icon::before {
-  content: '📊';
-  background-image: none;
-}
 div.callout-callout-case-study.callout {
   border-left-color: #FFA500;
 }
@@ -128,28 +82,6 @@ div.callout-callout-case-study.callout-style-default > .callout-header {
 div.callout-callout-case-study .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
 div.callout-callout-case-study.callout-style-default .callout-icon::before, div.callout-callout-case-study.callout-titled .callout-icon::before {
   content: '🔍';
-  background-image: none;
-}
-div.callout-callout-discussion.callout {
-  border-left-color: #BA55D3;
-}
-div.callout-callout-discussion.callout-style-default > .callout-header {
-  background-color: rgba(186, 85, 211, 0.13);
-}
-div.callout-callout-discussion .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
-div.callout-callout-discussion.callout-style-default .callout-icon::before, div.callout-callout-discussion.callout-titled .callout-icon::before {
-  content: '✨';
-  background-image: none;
-}
-div.callout-callout-challenge.callout {
-  border-left-color: aquamarine;
-}
-div.callout-callout-challenge.callout-style-default > .callout-header {
-  background-color: rgb(from aquamarine r g b / 13%);
-}
-div.callout-callout-challenge .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
-div.callout-callout-challenge.callout-style-default .callout-icon::before, div.callout-callout-challenge.callout-titled .callout-icon::before {
-  content: '🧑‍🏫';
   background-image: none;
 }
 div.callout-callout-microbe.callout {
@@ -163,15 +95,26 @@ div.callout-callout-microbe.callout-style-default .callout-icon::before, div.cal
   content: '🧫';
   background-image: none;
 }
-div.callout-callout-question.callout {
+div.callout-callout-questions.callout {
   border-left-color: yellow;
 }
-div.callout-callout-question.callout-style-default > .callout-header {
+div.callout-callout-questions.callout-style-default > .callout-header {
   background-color: rgb(from yellow r g b / 13%);
 }
-div.callout-callout-question .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
-div.callout-callout-question.callout-style-default .callout-icon::before, div.callout-callout-question.callout-titled .callout-icon::before {
-  content: '🙋';
+div.callout-callout-questions .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
+div.callout-callout-questions.callout-style-default .callout-icon::before, div.callout-callout-questions.callout-titled .callout-icon::before {
+  content: '🙋️';
+  background-image: none;
+}
+div.callout-callout-data.callout {
+  border-left-color: #32CD32;
+}
+div.callout-callout-data.callout-style-default > .callout-header {
+  background-color: rgba(50, 205, 50, 0.13);
+}
+div.callout-callout-data .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
+div.callout-callout-data.callout-style-default .callout-icon::before, div.callout-callout-data.callout-titled .callout-icon::before {
+  content: '📊';
   background-image: none;
 }
 div.callout-callout-thumbs-up.callout {
@@ -185,6 +128,28 @@ div.callout-callout-thumbs-up.callout-style-default .callout-icon::before, div.c
   content: '👍';
   background-image: none;
 }
+div.callout-callout-discussion.callout {
+  border-left-color: #BA55D3;
+}
+div.callout-callout-discussion.callout-style-default > .callout-header {
+  background-color: rgba(186, 85, 211, 0.13);
+}
+div.callout-callout-discussion .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
+div.callout-callout-discussion.callout-style-default .callout-icon::before, div.callout-callout-discussion.callout-titled .callout-icon::before {
+  content: '✨';
+  background-image: none;
+}
+div.callout-callout-question.callout {
+  border-left-color: yellow;
+}
+div.callout-callout-question.callout-style-default > .callout-header {
+  background-color: rgb(from yellow r g b / 13%);
+}
+div.callout-callout-question .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
+div.callout-callout-question.callout-style-default .callout-icon::before, div.callout-callout-question.callout-titled .callout-icon::before {
+  content: '🙋';
+  background-image: none;
+}
 div.callout-callout-todo.callout {
   border-left-color: pink;
 }
@@ -196,15 +161,15 @@ div.callout-callout-todo.callout-style-default .callout-icon::before, div.callou
   content: '📝';
   background-image: none;
 }
-div.callout-callout-questions.callout {
-  border-left-color: yellow;
+div.callout-callout-challenge.callout {
+  border-left-color: aquamarine;
 }
-div.callout-callout-questions.callout-style-default > .callout-header {
-  background-color: rgb(from yellow r g b / 13%);
+div.callout-callout-challenge.callout-style-default > .callout-header {
+  background-color: rgb(from aquamarine r g b / 13%);
 }
-div.callout-callout-questions .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
-div.callout-callout-questions.callout-style-default .callout-icon::before, div.callout-callout-questions.callout-titled .callout-icon::before {
-  content: '🙋️';
+div.callout-callout-challenge .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
+div.callout-callout-challenge.callout-style-default .callout-icon::before, div.callout-callout-challenge.callout-titled .callout-icon::before {
+  content: '🧑‍🏫';
   background-image: none;
 }
 </style>
@@ -221,7 +186,7 @@ div.callout-callout-questions.callout-style-default .callout-icon::before, div.c
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./example_pages.html">Example pages</a></li><li class="breadcrumb-item"><a href="./callouts.html"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Custom Callouts</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./example_pages.html">Example pages</a></li><li class="breadcrumb-item"><a href="./tutorial.html"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">ReadMe- more detailed version</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -306,13 +271,13 @@ div.callout-callout-questions.callout-style-default .callout-icon::before, div.c
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./callouts.html" class="sidebar-item-text sidebar-link active">
+  <a href="./callouts.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Custom Callouts</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./tutorial.html" class="sidebar-item-text sidebar-link">
+  <a href="./tutorial.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">ReadMe- more detailed version</span></span></a>
   </div>
 </li>
@@ -334,18 +299,16 @@ div.callout-callout-questions.callout-style-default .callout-icon::before, div.c
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#introduction" id="toc-introduction" class="nav-link active" data-scroll-target="#introduction"><span class="header-section-number">5.1</span> Introduction</a></li>
-  <li><a href="#defining-a-new-callout" id="toc-defining-a-new-callout" class="nav-link" data-scroll-target="#defining-a-new-callout"><span class="header-section-number">5.2</span> Defining a new callout</a></li>
-  <li><a href="#custom-callouts-in-this-template" id="toc-custom-callouts-in-this-template" class="nav-link" data-scroll-target="#custom-callouts-in-this-template"><span class="header-section-number">5.3</span> Custom callouts in this template</a></li>
+  <li><a href="#step-1-set-up-your-new-repository" id="toc-step-1-set-up-your-new-repository" class="nav-link active" data-scroll-target="#step-1-set-up-your-new-repository"><span class="header-section-number">6.1</span> Step 1: Set up your new repository</a></li>
   </ul>
-<div class="toc-actions"><ul><li><a href="https://github.com/sipbs-compbiol/REPOSITORY/edit/main/callouts.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/sipbs-compbiol/REPOSITORY/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
+<div class="toc-actions"><ul><li><a href="https://github.com/sipbs-compbiol/REPOSITORY/edit/main/tutorial.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/sipbs-compbiol/REPOSITORY/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./example_pages.html">Example pages</a></li><li class="breadcrumb-item"><a href="./callouts.html"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Custom Callouts</span></a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./example_pages.html">Example pages</a></li><li class="breadcrumb-item"><a href="./tutorial.html"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">ReadMe- more detailed version</span></a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Custom Callouts</span></h1>
+<h1 class="title"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">ReadMe- more detailed version</span></h1>
 </div>
 
 
@@ -362,281 +325,62 @@ div.callout-callout-questions.callout-style-default .callout-icon::before, div.c
 </header>
 
 
-<p>This page demonstrates the use of the <a href="https://quarto.thecoatlessprofessor.com/custom-callout/"><code>quarto-custom-callout</code></a> extension to provide bespoke callout blocks.</p>
+<p>This is a more step-by-step tutorial for how you can use the <code>sipbs-compbiol-book-template</code> GitHub template. It follows the basic steps outlined in the README file.</p>
+<section id="step-1-set-up-your-new-repository" class="level2" data-number="6.1">
+<h2 data-number="6.1" class="anchored" data-anchor-id="step-1-set-up-your-new-repository"><span class="header-section-number">6.1</span> Step 1: Set up your new repository</h2>
+<ol type="1">
+<li>Click on the green <code>Use This Template</code> button at the top right of the <code>sipbs-compbiol-book-template</code> GitHub page. [You will only see this button if you are signed into your GitHub account - if you need help getting started with a GitHub account, [add link]]</li>
+</ol>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/fig1.png" class="img-fluid figure-img"></p>
+<figcaption>Setting up your new repository - click the button indicated by the purple square</figcaption>
+</figure>
+</div>
+<ol start="2" type="1">
+<li>On the drop-down menu that will appear, click on <code>Create a new repository</code></li>
+</ol>
+<p>This will bring you to a page where you will need to enter some details about your new repository.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/fig2.png" class="img-fluid figure-img"></p>
+<figcaption>Create a new repository page</figcaption>
+</figure>
+</div>
 <ul>
-<li><a href="https://github.com/coatless-quarto/custom-callout"><code>quarto-custom-callout</code> repository</a></li>
-<li><a href="https://quarto.thecoatlessprofessor.com/custom-callout/"><code>quarto-custom-callout</code> examples and documentation</a></li>
+<li><p>You will want to give your repository a unique, descriptive name.</p></li>
+<li><p>You may want to add a brief description, explaining the purpose of your new repository.</p></li>
+<li><p>You can keep the other options as the defaults shown (you do not need to tick the button <code>Include all branches</code>; you should keep the repository status as <code>Public</code>).</p></li>
 </ul>
-<section id="introduction" class="level2" data-number="5.1">
-<h2 data-number="5.1" class="anchored" data-anchor-id="introduction"><span class="header-section-number">5.1</span> Introduction</h2>
-<p>Quarto provides a number of built-in callout blocks, including:</p>
-<div class="callout callout-style-default callout-caution callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Caution
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>The caution callout</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>::: { .callout-caution }</span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>The caution callout</span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>:::</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-</div>
-<div class="callout callout-style-default callout-important callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Important
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>The important callout</p>
-<div class="sourceCode" id="cb2"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>::: { .callout-info }</span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>The important callout</span>
-<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>:::</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-</div>
-<div class="callout callout-style-default callout-tip callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Tip
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>The tip callout</p>
-<div class="sourceCode" id="cb3"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>::: { .callout-tip }</span>
-<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>The tip callout</span>
-<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>:::</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-</div>
-<p>but these do not cover all the cases we might want to use callouts for. It is possible to change the titles of these callouts, such as:</p>
-<div class="callout callout-style-default callout-tip callout-titled" title="Custom title">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Custom title
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>The tip callout with a custom title</p>
-<div class="sourceCode" id="cb4"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>::: { .callout-tip title="Custom title"}</span>
-<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>The tip callout with a custom title</span>
-<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>:::</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-</div>
-<div class="callout callout-style-default callout-caution callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Not the caution callout
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<div class="sourceCode" id="cb5"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>::: { .callout-caution }</span>
-<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="fu">## Not the caution callout</span></span>
-<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>:::</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-</div>
-<p>but customising the colour and icon of a callout is more difficult. The <code>quarto-custom-callout</code> extension allows us to make our own callouts.</p>
-</section>
-<section id="defining-a-new-callout" class="level2" data-number="5.2">
-<h2 data-number="5.2" class="anchored" data-anchor-id="defining-a-new-callout"><span class="header-section-number">5.2</span> Defining a new callout</h2>
-<p>To make a new callout, add a new entry in <code>_quarto.yml</code> in the <code>custom-callout</code> block with the name of the callout. For instance, to add a new case study callout, we could use the code below:</p>
-<div class="sourceCode" id="cb6"><pre class="sourceCode yaml code-with-copy"><code class="sourceCode yaml"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="fu">custom-callout</span><span class="kw">:</span></span>
-<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">callout-case-study</span><span class="kw">:</span></span>
-<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="fu">title</span><span class="kw">:</span><span class="at"> </span><span class="st">"Case Study"</span></span>
-<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="fu">icon-symbol</span><span class="kw">:</span><span class="at"> </span><span class="st">"🔍"</span></span>
-<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="fu">color</span><span class="kw">:</span><span class="at"> </span><span class="st">"#FFA500"</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>and ensure that the <code>custom-callout</code> filter is called in <code>_quarto.yml</code>:</p>
-<div class="sourceCode" id="cb7"><pre class="sourceCode yaml code-with-copy"><code class="sourceCode yaml"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="fu">filters</span><span class="kw">:</span></span>
-<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="kw">-</span><span class="at"> custom-callout</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="callout callout-style-default callout-warning callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Callout naming convention
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>We have chosen to give all of our callouts for this template the prefix <code>callout-</code> for continuity with the builtin callouts, and to aid with literate programming/self-documentation. Please keep to this convention when you define your own callouts.</p>
-</div>
-</div>
-<div class="callout callout-style-default callout-tip callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Tip
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>Notice that the <code>icon-symbol</code> field accepts unicode icons and emojis.</p>
-</div>
-</div>
-</section>
-<section id="custom-callouts-in-this-template" class="level2" data-number="5.3">
-<h2 data-number="5.3" class="anchored" data-anchor-id="custom-callouts-in-this-template"><span class="header-section-number">5.3</span> Custom callouts in this template</h2>
-<p>We have defined the custom callouts below:</p>
-<div class="callout callout-style-default callout-callout-case-study callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Case Study
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>For describing case studies</p>
-<div class="sourceCode" id="cb8"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>::: { .callout-case-study }</span>
-<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>For describing case studies</span>
-<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a>:::</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-</div>
-<div class="callout callout-style-default callout-callout-challenge callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Challenge
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>For presenting a challenge to readers</p>
-<div class="sourceCode" id="cb9"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>::: { .callout-challenge }</span>
-<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>For presenting a challenge to readers</span>
-<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a>:::</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-</div>
-<div class="callout callout-style-default callout-callout-data callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Data Analysis
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>For describing datasets and data analysis</p>
-<div class="sourceCode" id="cb10"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a>::: { .callout-data }</span>
-<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a>For describing datasets and data analysis</span>
-<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a>:::</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-</div>
-<div class="callout callout-style-default callout-callout-discussion callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Discussion Questions:
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>For introducing discussion points</p>
-<div class="sourceCode" id="cb11"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a>::: { .callout-discussion }</span>
-<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a>For introducing discussion points</span>
-<span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a>:::</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-</div>
-<div class="callout callout-style-default callout-callout-microbe callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Microbe Profile
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>For summarising the properties of a microbe</p>
-<div class="sourceCode" id="cb12"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a>::: { .callout-microbe }</span>
-<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a>For summarising the properties of a microbe</span>
-<span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a>:::</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-</div>
-<div class="callout callout-style-default callout-callout-question callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Question
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>For presenting a single question to readers</p>
-<div class="sourceCode" id="cb13"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a>::: { .callout-question }</span>
-<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a>For presenting a single question to readers</span>
-<span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a>:::</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-</div>
-<div class="callout callout-style-default callout-callout-questions callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Questions
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>For presenting multiple questions to readers</p>
-<div class="sourceCode" id="cb14"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a>::: { .callout-questions }</span>
-<span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a>For presenting multiple questions to readers</span>
-<span id="cb14-3"><a href="#cb14-3" aria-hidden="true" tabindex="-1"></a>:::</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-</div>
-<div class="callout callout-style-default callout-callout-thumbs-up callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Great job!
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>For general encouragement</p>
-<div class="sourceCode" id="cb15"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a>::: { .callout-thumbs-up }</span>
-<span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a>For general encouragement</span>
-<span id="cb15-3"><a href="#cb15-3" aria-hidden="true" tabindex="-1"></a>:::</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-</div>
-<div class="callout callout-style-default callout-callout-todo callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Callout-todo
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>For highlighting where we still need to do some work</p>
-<div class="sourceCode" id="cb16"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a>::: { .callout-todo }</span>
-<span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a>For highlighting where we still need to do some work</span>
-<span id="cb16-3"><a href="#cb16-3" aria-hidden="true" tabindex="-1"></a>:::</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-</div>
+<p>When you are satisfied that the details for creating your new repository are correct, click the green <code>Create repository</code> button.</p>
+<p>It will take a few seconds for GitHub to generate your new repository, and then it should automatically take you to its page.</p>
+<ol start="3" type="1">
+<li>Set your pages site to render from the <code>gh-pages</code> branch as follows:</li>
+</ol>
+<ul>
+<li><p>On your repository page, click the <code>branches</code> button (will normally say <code>main</code> at the beginning.) In the search bar, where it says <code>Find or create a branch...</code> type <code>gh-pages</code> and then click <code>Create branch **gh-pages** from **main**</code></p></li>
+<li><p>Then click on the <code>Settings</code> link at the top right of the menu on your GitHub repository.</p></li>
+<li><p>In the <code>Settings</code> page, click on <code>Pages</code> in the left-hand menu. <img src="images/fig3.png" class="img-fluid" alt="GitHub repository settings - Pages"></p></li>
+</ul>
+<p>Check that your settings are correct:</p>
+<p>Under <code>Build and deployment</code>, the Source should be <code>Deploy from a branch</code> and the <code>Branch</code> should be your new <code>gh-pages</code> branch.</p>
+<ol start="4" type="1">
+<li>Clone or download the project to your local development environment [Note, these particular instructions are for using RStudio; if using another development environment, you will need to proceed differently]</li>
+</ol>
+<p>On your GitHub repository page, click the green button labelled “Code” (highlighted with a purple box in the figure below.)</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/fig4.png" class="img-fluid figure-img"></p>
+<figcaption>Clone your GitHub Repository - click the “Code” box highlighted iwth the purple square</figcaption>
+</figure>
+</div>
+<p>A URL will appear, with an option to copy the URL to your clipboard. Copy this URL.</p>
+<p>Working in R Studio, click on “File” in the menu, and then click <code>New Project</code>.</p>
+<p>A menu will appear with options for creating a project. You should select the option <code>Version Control</code> to <code>Checkout a project from a version control repository</code>.</p>
+<p>In the next menu, <code>Create Project from Version Control</code>, select <code>Git</code>.</p>
+<p>Enter the URL you copied from your GitHub page, into the space provided for the <code>Repository URL</code>.</p>
+<p>Specify an appropriate <code>Project directory name</code> and specify where this project should be saved (<code>Create project as subdirectory of</code> - note, make sure that you save your project somewhere you will be able to find it again).</p>
+<p>Click <code>Create Project</code>.</p>
 
 
 </section>
@@ -1043,13 +787,13 @@ Callout-todo
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./webr-example.html" class="pagination-link" aria-label="`WebR` Playground">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title"><code>WebR</code> Playground</span></span>
+      <a href="./callouts.html" class="pagination-link" aria-label="Custom Callouts">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Custom Callouts</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./tutorial.html" class="pagination-link" aria-label="ReadMe- more detailed version">
-        <span class="nav-page-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">ReadMe- more detailed version</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./references.html" class="pagination-link" aria-label="References">
+        <span class="nav-page-text">References</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
@@ -1061,7 +805,7 @@ Callout-todo
 </div>   
     <div class="nav-footer-center">
       &nbsp;
-    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/sipbs-compbiol/REPOSITORY/edit/main/callouts.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/sipbs-compbiol/REPOSITORY/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
+    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/sipbs-compbiol/REPOSITORY/edit/main/tutorial.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/sipbs-compbiol/REPOSITORY/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
     <div class="nav-footer-right">
 <p>This book was built with <a href="https://quarto.org/">Quarto</a>.</p>
 </div>
