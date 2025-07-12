@@ -40,7 +40,7 @@ book:
 
     - part: early-section.qmd
       chapters: 
-        - early-section-topic.qmd
+        - tutorial.qmd
     
     - part: example_pages.qmd
       chapters: 
@@ -48,7 +48,7 @@ book:
         - webr-example.qmd
         - callouts.qmd
         - embedpdf.qmd
-        - tutorial.qmd
+
     
     - references.qmd
 
