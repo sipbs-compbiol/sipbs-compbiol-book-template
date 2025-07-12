@@ -8,7 +8,7 @@
 
 <meta name="author" content="Leighton Pritchard">
 
-<title>7&nbsp; ReadMe- more detailed version – THE TITLE OF THE BOOK</title>
+<title>2&nbsp; Getting started – THE TITLE OF THE BOOK</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -31,8 +31,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./references.html" rel="next">
-<link href="./embedpdf.html" rel="prev">
+<link href="./example_pages.html" rel="next">
+<link href="./early-section.html" rel="prev">
 <link href="./icon_32.png" rel="icon" type="image/png">
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
@@ -45,6 +45,8 @@ ul.task-list li input[type="checkbox"] {
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="site_libs/bootstrap/bootstrap-5fd9db47a040b21ac2cac9a0b3b722ba.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <link href="site_libs/quarto-contrib/alpine-3.12/buttons.css" rel="stylesheet">
+<script src="site_libs/quarto-contrib/videojs/video.min.js"></script>
+<link href="site_libs/quarto-contrib/videojs/video-js.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -84,17 +86,6 @@ div.callout-callout-data.callout-style-default .callout-icon::before, div.callou
   content: '📊';
   background-image: none;
 }
-div.callout-callout-discussion.callout {
-  border-left-color: #BA55D3;
-}
-div.callout-callout-discussion.callout-style-default > .callout-header {
-  background-color: rgba(186, 85, 211, 0.13);
-}
-div.callout-callout-discussion .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
-div.callout-callout-discussion.callout-style-default .callout-icon::before, div.callout-callout-discussion.callout-titled .callout-icon::before {
-  content: '✨';
-  background-image: none;
-}
 div.callout-callout-thumbs-up.callout {
   border-left-color: #008000;
 }
@@ -104,39 +95,6 @@ div.callout-callout-thumbs-up.callout-style-default > .callout-header {
 div.callout-callout-thumbs-up .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
 div.callout-callout-thumbs-up.callout-style-default .callout-icon::before, div.callout-callout-thumbs-up.callout-titled .callout-icon::before {
   content: '👍';
-  background-image: none;
-}
-div.callout-callout-question.callout {
-  border-left-color: yellow;
-}
-div.callout-callout-question.callout-style-default > .callout-header {
-  background-color: rgb(from yellow r g b / 13%);
-}
-div.callout-callout-question .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
-div.callout-callout-question.callout-style-default .callout-icon::before, div.callout-callout-question.callout-titled .callout-icon::before {
-  content: '🙋';
-  background-image: none;
-}
-div.callout-callout-challenge.callout {
-  border-left-color: aquamarine;
-}
-div.callout-callout-challenge.callout-style-default > .callout-header {
-  background-color: rgb(from aquamarine r g b / 13%);
-}
-div.callout-callout-challenge .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
-div.callout-callout-challenge.callout-style-default .callout-icon::before, div.callout-callout-challenge.callout-titled .callout-icon::before {
-  content: '🧑‍🏫';
-  background-image: none;
-}
-div.callout-callout-questions.callout {
-  border-left-color: yellow;
-}
-div.callout-callout-questions.callout-style-default > .callout-header {
-  background-color: rgb(from yellow r g b / 13%);
-}
-div.callout-callout-questions .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
-div.callout-callout-questions.callout-style-default .callout-icon::before, div.callout-callout-questions.callout-titled .callout-icon::before {
-  content: '🙋️';
   background-image: none;
 }
 div.callout-callout-todo.callout {
@@ -150,15 +108,15 @@ div.callout-callout-todo.callout-style-default .callout-icon::before, div.callou
   content: '📝';
   background-image: none;
 }
-div.callout-callout-microbe.callout {
-  border-left-color: #1E90FF;
+div.callout-callout-question.callout {
+  border-left-color: yellow;
 }
-div.callout-callout-microbe.callout-style-default > .callout-header {
-  background-color: rgba(30, 144, 255, 0.13);
+div.callout-callout-question.callout-style-default > .callout-header {
+  background-color: rgb(from yellow r g b / 13%);
 }
-div.callout-callout-microbe .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
-div.callout-callout-microbe.callout-style-default .callout-icon::before, div.callout-callout-microbe.callout-titled .callout-icon::before {
-  content: '🧫';
+div.callout-callout-question .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
+div.callout-callout-question.callout-style-default .callout-icon::before, div.callout-callout-question.callout-titled .callout-icon::before {
+  content: '🙋';
   background-image: none;
 }
 div.callout-callout-case-study.callout {
@@ -170,6 +128,50 @@ div.callout-callout-case-study.callout-style-default > .callout-header {
 div.callout-callout-case-study .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
 div.callout-callout-case-study.callout-style-default .callout-icon::before, div.callout-callout-case-study.callout-titled .callout-icon::before {
   content: '🔍';
+  background-image: none;
+}
+div.callout-callout-microbe.callout {
+  border-left-color: #1E90FF;
+}
+div.callout-callout-microbe.callout-style-default > .callout-header {
+  background-color: rgba(30, 144, 255, 0.13);
+}
+div.callout-callout-microbe .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
+div.callout-callout-microbe.callout-style-default .callout-icon::before, div.callout-callout-microbe.callout-titled .callout-icon::before {
+  content: '🧫';
+  background-image: none;
+}
+div.callout-callout-questions.callout {
+  border-left-color: yellow;
+}
+div.callout-callout-questions.callout-style-default > .callout-header {
+  background-color: rgb(from yellow r g b / 13%);
+}
+div.callout-callout-questions .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
+div.callout-callout-questions.callout-style-default .callout-icon::before, div.callout-callout-questions.callout-titled .callout-icon::before {
+  content: '🙋️';
+  background-image: none;
+}
+div.callout-callout-challenge.callout {
+  border-left-color: aquamarine;
+}
+div.callout-callout-challenge.callout-style-default > .callout-header {
+  background-color: rgb(from aquamarine r g b / 13%);
+}
+div.callout-callout-challenge .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
+div.callout-callout-challenge.callout-style-default .callout-icon::before, div.callout-callout-challenge.callout-titled .callout-icon::before {
+  content: '🧑‍🏫';
+  background-image: none;
+}
+div.callout-callout-discussion.callout {
+  border-left-color: #BA55D3;
+}
+div.callout-callout-discussion.callout-style-default > .callout-header {
+  background-color: rgba(186, 85, 211, 0.13);
+}
+div.callout-callout-discussion .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
+div.callout-callout-discussion.callout-style-default .callout-icon::before, div.callout-callout-discussion.callout-titled .callout-icon::before {
+  content: '✨';
   background-image: none;
 }
 </style>
@@ -186,7 +188,7 @@ div.callout-callout-case-study.callout-style-default .callout-icon::before, div.
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./example_pages.html">Example pages</a></li><li class="breadcrumb-item"><a href="./tutorial.html"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">ReadMe- more detailed version</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./early-section.html">Introduction</a></li><li class="breadcrumb-item"><a href="./tutorial.html"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Getting started</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -234,7 +236,7 @@ div.callout-callout-case-study.callout-style-default .callout-icon::before, div.
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a href="./early-section.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Early Section</span></a>
+ <span class="menu-text">Introduction</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -242,8 +244,8 @@ div.callout-callout-case-study.callout-style-default .callout-icon::before, div.
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./early-section-topic.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Early Section Topic</span></span></a>
+  <a href="./tutorial.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Getting started</span></span></a>
   </div>
 </li>
       </ul>
@@ -281,12 +283,6 @@ div.callout-callout-case-study.callout-style-default .callout-icon::before, div.
  <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Embedding PDF files</span></span></a>
   </div>
 </li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./tutorial.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">ReadMe- more detailed version</span></span></a>
-  </div>
-</li>
       </ul>
   </li>
         <li class="sidebar-item">
@@ -305,16 +301,19 @@ div.callout-callout-case-study.callout-style-default .callout-icon::before, div.
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#step-1-set-up-your-new-repository" id="toc-step-1-set-up-your-new-repository" class="nav-link active" data-scroll-target="#step-1-set-up-your-new-repository"><span class="header-section-number">7.1</span> Step 1: Set up your new repository</a></li>
+  <li><a href="#step-1-create-a-new-github-repository-from-the-template." id="toc-step-1-create-a-new-github-repository-from-the-template." class="nav-link active" data-scroll-target="#step-1-create-a-new-github-repository-from-the-template.">Step 1: Create a new GitHub repository from the template.</a></li>
+  <li><a href="#step-2-clone-the-new-repository-to-your-personal-machine" id="toc-step-2-clone-the-new-repository-to-your-personal-machine" class="nav-link" data-scroll-target="#step-2-clone-the-new-repository-to-your-personal-machine">Step 2: Clone the new repository to your personal machine</a></li>
+  <li><a href="#step-3-set-up-the-local-repository-to-render-to-github-pages" id="toc-step-3-set-up-the-local-repository-to-render-to-github-pages" class="nav-link" data-scroll-target="#step-3-set-up-the-local-repository-to-render-to-github-pages">Step 3: Set up the local repository to render to GitHub Pages</a></li>
+  <li><a href="#step-4-edit-your-local-repository-in-rstudio-and-push-changes-to-github-pages" id="toc-step-4-edit-your-local-repository-in-rstudio-and-push-changes-to-github-pages" class="nav-link" data-scroll-target="#step-4-edit-your-local-repository-in-rstudio-and-push-changes-to-github-pages">Step 4: Edit your local repository (in <code>RStudio</code>) and push changes to GitHub Pages</a></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.com/sipbs-compbiol/REPOSITORY/edit/main/tutorial.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/sipbs-compbiol/REPOSITORY/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./example_pages.html">Example pages</a></li><li class="breadcrumb-item"><a href="./tutorial.html"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">ReadMe- more detailed version</span></a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./early-section.html">Introduction</a></li><li class="breadcrumb-item"><a href="./tutorial.html"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Getting started</span></a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">ReadMe- more detailed version</span></h1>
+<h1 class="title"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Getting started</span></h1>
 </div>
 
 
@@ -331,62 +330,211 @@ div.callout-callout-case-study.callout-style-default .callout-icon::before, div.
 </header>
 
 
-<p>This is a more step-by-step tutorial for how you can use the <code>sipbs-compbiol-book-template</code> GitHub template. It follows the basic steps outlined in the README file.</p>
-<section id="step-1-set-up-your-new-repository" class="level2" data-number="7.1">
-<h2 data-number="7.1" class="anchored" data-anchor-id="step-1-set-up-your-new-repository"><span class="header-section-number">7.1</span> Step 1: Set up your new repository</h2>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Important
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>This page provides a step-by-step tutorial for using the <code>sipbs-compbiol-book-template</code> GitHub template. By following this guide you will:</p>
+<ul>
+<li>Create a new GitHub repository for your materials/project, using this book template.</li>
+<li>Create a local copy of the repository on your machine, which you can edit using, for example, <code>RStudio</code>.</li>
+<li>Set up the repository to use GitHub Pages as a platform for publishing your book/materials.</li>
+<li>Make local changes to the files on your own machine, and update the public pages by <em>pushing</em> them to GitHub.</li>
+</ul>
+</div>
+</div>
+<ul>
+<li><a href="https://github.com/sipbs-compbiol/sipbs-compbiol-book-template"><code>sipbs-compbiol-book-template</code> repository</a></li>
+</ul>
+<p>The basic steps we cover below are:</p>
 <ol type="1">
-<li>Click on the green <code>Use This Template</code> button at the top right of the <code>sipbs-compbiol-book-template</code> GitHub page. [You will only see this button if you are signed into your GitHub account - if you need help getting started with a GitHub account, [add link]]</li>
+<li>Use the GitHub page for this template to create a new GitHub repository</li>
+<li>Clone the new repository to your local machine</li>
+<li>Set up the new repository to display as a website on GitHub Pages</li>
+<li>Edit your repository locally, and push changes back to GitHub (they will automatically update the webpage)</li>
 </ol>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="images/fig1.png" class="img-fluid figure-img"></p>
-<figcaption>Setting up your new repository - click the button indicated by the purple square</figcaption>
+<section id="step-1-create-a-new-github-repository-from-the-template." class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="step-1-create-a-new-github-repository-from-the-template.">Step 1: Create a new GitHub repository from the template.</h2>
+<ol type="1">
+<li>Navigate to <a href="https://github.com/sipbs-compbiol/sipbs-compbiol-book-template">this template’s repository at GitHub</a> using your web browser.</li>
+<li>Click on the green <code>Use This Template</code> button at the top right of the <code>sipbs-compbiol-book-template</code> GitHub page (<a href="#fig-use-this-template" class="quarto-xref">Figure&nbsp;<span>2.1</span></a>).</li>
+</ol>
+<div class="callout callout-style-default callout-warning callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Warning
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>You will only see this button if you are signed into your own GitHub account.</p>
+<p>If you do not already have a GitHub account, the <a href="https://docs.github.com/en/get-started/start-your-journey/creating-an-account-on-github">GitHub documentation</a> can walk you through the process of obtaining one, and logging in.</p>
+</div>
+</div>
+<div id="fig-use-this-template" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-use-this-template-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div class="quarto-video"><video id="video_shortcode_videojs_video1" class="video-js vjs-default-skin vjs-fluid" controls="" preload="auto" data-setup="{}" title=""><source src="assets/videos/template-tutorial-video-1.mp4"></video></div>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-use-this-template-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;2.1: Video demonstration of using this template to create a new GitHub repository.
+</figcaption>
 </figure>
 </div>
-<ol start="2" type="1">
-<li>On the drop-down menu that will appear, click on <code>Create a new repository</code></li>
-</ol>
-<p>This will bring you to a page where you will need to enter some details about your new repository.</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="images/fig2.png" class="img-fluid figure-img"></p>
-<figcaption>Create a new repository page</figcaption>
-</figure>
-</div>
-<ul>
-<li><p>You will want to give your repository a unique, descriptive name.</p></li>
-<li><p>You may want to add a brief description, explaining the purpose of your new repository.</p></li>
-<li><p>You can keep the other options as the defaults shown (you do not need to tick the button <code>Include all branches</code>; you should keep the repository status as <code>Public</code>).</p></li>
-</ul>
-<p>When you are satisfied that the details for creating your new repository are correct, click the green <code>Create repository</code> button.</p>
-<p>It will take a few seconds for GitHub to generate your new repository, and then it should automatically take you to its page.</p>
 <ol start="3" type="1">
-<li>Set your pages site to render from the <code>gh-pages</code> branch as follows:</li>
+<li>A drop-down menu will appear. Click on the <code>Create a new repository</code> option. This will bring you to a page (<a href="#fig-use-this-template" class="quarto-xref">Figure&nbsp;<span>2.1</span></a>) for you to provide details about the new repository you want to create.</li>
 </ol>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Tip
+</div>
+</div>
+<div class="callout-body-container callout-body">
 <ul>
-<li><p>On your repository page, click the <code>branches</code> button (will normally say <code>main</code> at the beginning.) In the search bar, where it says <code>Find or create a branch...</code> type <code>gh-pages</code> and then click <code>Create branch **gh-pages** from **main**</code></p></li>
-<li><p>Then click on the <code>Settings</code> link at the top right of the menu on your GitHub repository.</p></li>
-<li><p>In the <code>Settings</code> page, click on <code>Pages</code> in the left-hand menu. <img src="images/fig3.png" class="img-fluid" alt="GitHub repository settings - Pages"></p></li>
+<li>Give your repository a unique, memorable, descriptive name. This will make it easier to find and help users understand what the repository is for.</li>
+<li>Add a brief description, explaining the purpose of your new repository. This will help users understand what the repository is for.</li>
+<li>Leave <code>Include all branches</code> unchecked.</li>
+<li>Make sure the repository status is set to <code>Public</code>.</li>
 </ul>
-<p>Check that your settings are correct:</p>
-<p>Under <code>Build and deployment</code>, the Source should be <code>Deploy from a branch</code> and the <code>Branch</code> should be your new <code>gh-pages</code> branch.</p>
+</div>
+</div>
 <ol start="4" type="1">
-<li>Clone or download the project to your local development environment [Note, these particular instructions are for using RStudio; if using another development environment, you will need to proceed differently]</li>
+<li>When you are satisfied that the details for creating your new repository are correct, click the green <code>Create repository</code> button (<a href="#fig-use-this-template" class="quarto-xref">Figure&nbsp;<span>2.1</span></a>).</li>
 </ol>
-<p>On your GitHub repository page, click the green button labelled “Code” (highlighted with a purple box in the figure below.)</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="images/fig4.png" class="img-fluid figure-img"></p>
-<figcaption>Clone your GitHub Repository - click the “Code” box highlighted iwth the purple square</figcaption>
+</section>
+<section id="step-2-clone-the-new-repository-to-your-personal-machine" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="step-2-clone-the-new-repository-to-your-personal-machine">Step 2: Clone the new repository to your personal machine</h2>
+<p>You will be editing your online material on your own machine, and <em>pushing</em> the repository to GitHub for version control and to create and update the webpage where people will read your material. You need to <em>clone</em> your new repository to your machine, so that you can work on it. The first part of this process is to copy the URL that will let you clone the repository.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>There are several equally valid methods for cloning a repository to your own computer. Covering all of these is beyond the scope of this tutorial, so we only present one method here. Any approach that works is fine.</p>
+</div>
+</div>
+<ol type="1">
+<li>Click on the green <code>Code</code> button on your GitHub repository. This will reveal a drop-down box with a number of tabs and options (<a href="#fig-get-repo-url" class="quarto-xref">Figure&nbsp;<span>2.2</span></a>)</li>
+<li>With the <code>SSH</code> tab selected, click on the <code>Copy URL to clipboard</code> button.</li>
+</ol>
+<div id="fig-get-repo-url" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-get-repo-url-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div class="quarto-video"><video id="video_shortcode_videojs_video2" class="video-js vjs-default-skin vjs-fluid" controls="" preload="auto" data-setup="{}" title=""><source src="assets/videos/template-tutorial-video-1a.mp4"></video></div>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-get-repo-url-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;2.2: Video demonstration: copying the URL for your repository so it can be cloned to your local computer.
+</figcaption>
 </figure>
 </div>
-<p>A URL will appear, with an option to copy the URL to your clipboard. Copy this URL.</p>
-<p>Working in R Studio, click on “File” in the menu, and then click <code>New Project</code>.</p>
-<p>A menu will appear with options for creating a project. You should select the option <code>Version Control</code> to <code>Checkout a project from a version control repository</code>.</p>
-<p>In the next menu, <code>Create Project from Version Control</code>, select <code>Git</code>.</p>
-<p>Enter the URL you copied from your GitHub page, into the space provided for the <code>Repository URL</code>.</p>
-<p>Specify an appropriate <code>Project directory name</code> and specify where this project should be saved (<code>Create project as subdirectory of</code> - note, make sure that you save your project somewhere you will be able to find it again).</p>
-<p>Click <code>Create Project</code>.</p>
+<ol start="3" type="1">
+<li>At the command-line/terminal, type the command <code>git clone</code> and paste the repository URL that you copied to clipboard from your new repository (<a href="#fig-get-repo-url" class="quarto-xref">Figure&nbsp;<span>2.2</span></a>).</li>
+</ol>
+</section>
+<section id="step-3-set-up-the-local-repository-to-render-to-github-pages" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="step-3-set-up-the-local-repository-to-render-to-github-pages">Step 3: Set up the local repository to render to GitHub Pages</h2>
+<ol type="1">
+<li>In the terminal, change directory to your new repository (e.g.&nbsp;if your new repository is called <code>my-new-repo</code>, use <code>cd my-new-repo</code> as in <a href="#fig-clone-repo" class="quarto-xref">Figure&nbsp;<span>2.3</span></a>).</li>
+<li>Run the command <code>quarto publish gh-pages</code>. You will be asked whether you want to publish the site to GitHub. Press the <code>Y</code> key to accept.</li>
+</ol>
+<div id="fig-clone-repo" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-clone-repo-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div class="quarto-video"><video id="video_shortcode_videojs_video3" class="video-js vjs-default-skin vjs-fluid" controls="" preload="auto" data-setup="{}" title=""><source src="assets/videos/template-tutorial-video-2.mp4"></video></div>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-clone-repo-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;2.3: Video demonstration of cloning the repository to your local computer, and configuring it to render the document at GitHub Pages.
+</figcaption>
+</figure>
+</div>
+<p>After a short pause, your browser should automatically open your new site pages at GitHub. You will be able to navigate around the material just like a normal webpage (<a href="#fig-repo-site" class="quarto-xref">Figure&nbsp;<span>2.4</span></a>).</p>
+<div id="fig-repo-site" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-repo-site-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div class="quarto-video"><video id="video_shortcode_videojs_video4" class="video-js vjs-default-skin vjs-fluid" controls="" preload="auto" data-setup="{}" title=""><source src="assets/videos/template-tutorial-video-3.mp4"></video></div>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-repo-site-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;2.4: Video demonstration of the published web materials.
+</figcaption>
+</figure>
+</div>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Important
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>You should not need to modify any further settings for changes that you now push to your GitHub repository to be made live at your repository’s website.</p>
+<ul>
+<li>The <code>quarto publish gh-pages</code> command automatically created a <code>gh-pages</code> branch at GitHub, and placed a rendered version of your new repository website in it (<a href="#fig-repo-config" class="quarto-xref">Figure&nbsp;<span>2.5</span></a>).</li>
+<li>Your repository is automatically set to use this <code>gh-pages</code> branch of your repository to host its webpages (<a href="#fig-repo-config" class="quarto-xref">Figure&nbsp;<span>2.5</span></a>).</li>
+<li>The template includes a GitHub Action that will automatically rebuild your Quarto site when any changes are pushed to the <code>main</code> repository. Once pushed, the changes will go live following a short delay to build the pages.</li>
+</ul>
+<div id="fig-repo-config" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-repo-config-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div class="quarto-video"><video id="video_shortcode_videojs_video5" class="video-js vjs-default-skin vjs-fluid" controls="" preload="auto" data-setup="{}" title=""><source src="assets/videos/template-tutorial-video-4.mp4"></video></div>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-repo-config-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;2.5: Video demonstration of the repository configuration.
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="step-4-edit-your-local-repository-in-rstudio-and-push-changes-to-github-pages" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="step-4-edit-your-local-repository-in-rstudio-and-push-changes-to-github-pages">Step 4: Edit your local repository (in <code>RStudio</code>) and push changes to GitHub Pages</h2>
+<p>You can now edit your online materials in the repository using <code>RStudio</code> in the usual way. When you are ready to make changes to the public site showing the materials, you only need to <em>commit</em> your changes and <em>push</em> them to the repository. The rest is handled automatically. The process is demonstrated in <a href="#fig-demo-commit" class="quarto-xref">Figure&nbsp;<span>2.6</span></a>, and the main actions are:</p>
+<ul>
+<li>Open your repository in <code>RStudio</code></li>
+<li>Make an edit to any file that displays part of the materials online (e.g.&nbsp;<code>index.qmd</code>)</li>
+<li>Commit your changes in the <code>git</code> tab of the <code>RStudio</code> window</li>
+<li>Push your changes to the GitHub repository (and wait for the site to build)</li>
+<li>Check the repository and GitHub Pages site to confirm the changes are live</li>
+</ul>
+<div id="fig-demo-commit" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-demo-commit-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div class="quarto-video"><video id="video_shortcode_videojs_video6" class="video-js vjs-default-skin vjs-fluid" controls="" preload="auto" data-setup="{}" title=""><source src="assets/videos/template-tutorial-video-5.mp4"></video></div>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-demo-commit-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;2.6: Video demonstration of the process of updating the public site by editing a file and pushing changes to the repository.
+</figcaption>
+</figure>
+</div>
+<ol type="1">
+<li>Open the template/R project using <code>RStudio</code> (e.g.&nbsp;double-click on the <code>.Rproj</code> file as in <a href="#fig-demo-commit" class="quarto-xref">Figure&nbsp;<span>2.6</span></a>).</li>
+<li>Make the desired edits to any files (e.g.&nbsp;modify the <code>index.qmd</code> file as in <a href="#fig-demo-commit" class="quarto-xref">Figure&nbsp;<span>2.6</span></a>).</li>
+<li>Save your changes locally.</li>
+<li>Select the changed files in the <code>git</code> tab of <code>RStudio</code> and click the <code>Commit</code> icon. A new window will appear.</li>
+<li>In the new window, enter a short commit string, and click the <code>Commit</code> button. The commit string will disappear. This <em>commits</em> your changes to the local repository.</li>
+<li>Click on the <code>Push</code> icon (the up arrow) to <em>push</em> your changes to the GitHub repository. A short message will appear, confirming that the files have transferred.</li>
+<li>To confirm the changes were pushed to the GitHub repository, you can visit the repository site and check the individual file contents.</li>
+<li>To confirm that the website is being updated, you can click on the <code>Actions</code> link at the top of the repository page. This will summarise recent <code>GitHub Actions</code> and will tell you if your site has been built, is in the process of being built, or if an error occurred.</li>
+<li>Once the site has been built by the GitHub Action, you will be able to visit the public GitHub Pages site for this repository, and inspect the changes, as in <a href="#fig-demo-commit" class="quarto-xref">Figure&nbsp;<span>2.6</span></a>.</li>
+</ol>
 
 
 </section>
@@ -793,13 +941,13 @@ div.callout-callout-case-study.callout-style-default .callout-icon::before, div.
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./embedpdf.html" class="pagination-link" aria-label="Embedding PDF files">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Embedding PDF files</span></span>
+      <a href="./early-section.html" class="pagination-link" aria-label="Introduction">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Introduction</span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./references.html" class="pagination-link" aria-label="References">
-        <span class="nav-page-text">References</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./example_pages.html" class="pagination-link" aria-label="Example pages">
+        <span class="nav-page-text">Example pages</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
@@ -817,6 +965,12 @@ div.callout-callout-case-study.callout-style-default .callout-icon::before, div.
 </div>
   </div>
 </footer>
+<script>videojs(video_shortcode_videojs_video1);</script>
+<script>videojs(video_shortcode_videojs_video2);</script>
+<script>videojs(video_shortcode_videojs_video3);</script>
+<script>videojs(video_shortcode_videojs_video4);</script>
+<script>videojs(video_shortcode_videojs_video5);</script>
+<script>videojs(video_shortcode_videojs_video6);</script>
 
 
 
