@@ -48,6 +48,7 @@ book:
         - webr-example.qmd
         - callouts.qmd
         - embedpdf.qmd
+        - numbas.qmd
 
     
     - references.qmd
