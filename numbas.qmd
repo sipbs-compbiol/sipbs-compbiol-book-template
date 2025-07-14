@@ -1,4 +1,4 @@
-# Numbas
+# Embedding Numbas Questions
 
 [Numbas](https://numbas.org.uk) is an open-source e-assessment system aimed at mathematics and other numerate disciplines. It generates [SCORM 2004](https://scorm.com/scorm-explained/technical-scorm/scorm-2004-overview-for-developers/)-compliant, self-contained assessment packages, and can present randomised questions for practice and assessment.
 
