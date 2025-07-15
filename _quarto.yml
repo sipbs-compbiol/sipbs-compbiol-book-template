@@ -47,6 +47,7 @@ book:
         - quiz.qmd
         - webr-example.qmd
         - callouts.qmd
+        - movies.qmd
         - embedpdf.qmd
         - numbas.qmd
 
