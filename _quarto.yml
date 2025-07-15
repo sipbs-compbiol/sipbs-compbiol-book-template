@@ -44,14 +44,13 @@ book:
     
     - part: example_pages.qmd
       chapters: 
-        - quiz.qmd
-        - webr-example.qmd
         - callouts.qmd
         - movies.qmd
         - embedpdf.qmd
+        - quiz.qmd
+        - webr-example.qmd
         - numbas.qmd
 
-    
     - references.qmd
 
 # Location of BibTeX format reference file; may not need to be changed

@@ -52,7 +52,7 @@ This template provides an `assets/videos` folder, which can be used for adding v
 
 ### Cross-referencing videos
 
-To use cross-references with videos, wrap the video in a `div` using three colons, as in the example below.
+To use cross-references with videos, wrap the video in a `div` using three colons, as in the example below. They can then be referenced using the usual `@fig-label` method.
 
 ::: { .panel-tabset }
 
@@ -66,6 +66,8 @@ This is an example video with cross-referencing (and a legend!)
 
 :::
 
+And it's cross-referenced like this (@fig-example-1).
+
 ## Markdown
 
 ```markdown
@@ -76,6 +78,8 @@ This is an example video with cross-referencing (and a legend!)
 This is an example video with cross-referencing (and a legend!)
 
 :::
+
+And it's cross-referenced like this (@fig-example-1).
 ```
 
 :::
