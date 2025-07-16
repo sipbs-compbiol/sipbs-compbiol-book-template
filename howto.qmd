@@ -45,3 +45,73 @@ and then render the file.
 ::: { .callout-important }
 To ensure your changes are not lost, _commit_ the changes to your repository (your `.qmd` file, the `_quarto.yml` file, and any supporting images or other files), and _push_ them to GitHub.
 :::
+
+## …set a value once to be used everywhere?
+
+Quarto supports _global variables_, values that are defined once in a document, and that can be referred to at any point by using a special sequence of characters called a _shortcode_. The variables are defined in the `_variables.yml` file, using the `YAML` markup language.
+
+::: { .callout-tip }
+Global variables can be useful for defining details that might be repeated multiple times across your book:
+
+- administrative information, like contact emails and numbers
+- the academic year for a module presentation (saves searching for every mention in all pages)
+:::
+
+To include the value held in a variable called `myvar`, you would define this in `_variables.yml` as:
+
+```yaml
+myvar: "The value of the variable"
+```
+
+and use the shortcode:
+
+```markdown
+{{{< var myvar >}}}
+```
+
+Variables can be named directly, as with `myvar` above, but they can also be grouped by category as `category.variable` combinations. For instance, if you wanted to define a set of telephone numbers for three rooms `HW312`, `HW313`, and `HW314`, you could give these the category `phone`, defining them as, e.g.:
+
+```yaml
+phone:
+  HW312: 01-234-657890
+  HW313: 01-234-657891
+  HW313: 01-234-657892
+```
+
+and use them with shortcode:
+
+```markdown
+{{{< var phone.HW313 >}}}
+```
+
+::: { .panel-tabset }
+
+## Appearance
+
+This is `global_variable`: {{< var global_variable >}}.
+
+This is `category.value1`: {{< var category.value1 >}}.
+
+This is `category.value2`: {{< var category.value2 >}}.
+
+## Markdown
+
+```markdown
+This is `global_variable`: {{{< var global_variable >}}}.
+
+This is `category.value1`: {{{< var category.value1 >}}}.
+
+This is `category.value2`: {{{< var category.value2 >}}}.
+```
+
+## `_variables.yml`
+
+```yaml
+# Example variables for the howto page
+global_variable: "This is an example of a global variable"
+category:
+  value1: "This is an example of a `category.value` variable"
+  value2: "This is another example of a `category.value` variable"
+```
+
+:::

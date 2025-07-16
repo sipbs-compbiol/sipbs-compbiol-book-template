@@ -1,6 +1,6 @@
 # This variable is intended to carry the Academic Year
 # [A]
-ay: "2023-24"
+ay: "2025-26"
 
 # These variables are used for identification of the book/repository administrator
 # [B] CHANGE THESE VARIABLES TO SET THE BOOK/REPO ADMIN
@@ -14,3 +14,9 @@ admin:
 github:
   repo: "https://github.com/sipbs-compbiol/REPOSITORY"
   issues: "https://github.com/sipbs-compbiol/REPOSITORY/issues"
+  
+# Example variables for the howto page
+global_variable: "This is an example of a global variable"
+category:
+  value1: "This is an example of a `category.value` variable"
+  value2: "This is another example of a `category.value` variable"
