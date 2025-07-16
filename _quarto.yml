@@ -41,6 +41,7 @@ book:
     - part: early-section.qmd
       chapters: 
         - tutorial.qmd
+        - howto.qmd
     
     - part: example_pages.qmd
       chapters: 

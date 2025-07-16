@@ -1,0 +1,47 @@
+# How do I…?
+
+This page is intended as a FAQ/HowTo for some common questions that might come up when using this template for the first time.
+
+Some [example pages](example_pages.qmd) dedicated to common tasks and specific kinds of presentation are included later in the template.
+
+## …create a new page?
+
+::: { .callout-tip title="tl;dr" }
+1. Create a new plant text file
+2. Write Markdown content in your file
+3. Save your file as a `.qmd` file (with an appropriate filename)
+4. Add your filename to the `_quarto.yml` file in an appropriate place
+5. Commit your changes
+6. Push the changes to your repository
+:::
+
+Assuming that you're using `RStudio`, you need to create a new file to hold the Markdown for your page. I usually create a new text file (`File -> New File -> Text File` or click on the `New File` icon and select `Text File`). Write some content in the file and save it as a `.qmd` file with a meaningful filename (e.g. this file is called `howto.qmd`).
+
+At this point, the file you just wrote could be rendered, but it won't be linked as a page in the book. To link the file, open the `_quarto.yml` file and look for the section that starts:
+
+```yaml
+# Define chapters and sections here
+  # [E] CHAPTERS AND SECTIONS
+  chapters:
+    - index.qmd
+    - intro.qmd
+```
+
+Then enter the name of your file in the appropriate place, e.g. in the `early-section.qmd` part, as a chapter following `tutorial.qmd` in the example below:
+
+```yaml
+    - part: early-section.qmd
+      chapters: 
+        - tutorial.qmd
+        - howto.qmd      # new page added at this line
+```
+
+::: { .callout-warning }
+The `_quarto.yml` file is written in a language called `YAML` (yet another markup language), and the syntax is important. If you follow the style of the file, you should be fine.
+:::
+
+and then render the file.
+
+::: { .callout-important }
+To ensure your changes are not lost, _commit_ the changes to your repository (your `.qmd` file, the `_quarto.yml` file, and any supporting images or other files), and _push_ them to GitHub.
+:::
