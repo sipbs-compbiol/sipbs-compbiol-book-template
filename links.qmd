@@ -10,6 +10,8 @@ This page provides links to online resources that may be useful when working wit
 ### Markdown
 
 - [Quarto Markdown basics](https://quarto.org/docs/authoring/markdown-basics.html)
+- [`kableExtra` documentation](https://www.rdocumentation.org/packages/kableExtra/versions/1.4.0)
+- [`RMarkdown` cookbook](https://bookdown.org/yihui/rmarkdown-cookbook/)
 
 ## `R`
 
@@ -42,7 +44,8 @@ This page provides links to online resources that may be useful when working wit
 
 ### `Shiny`
 
-- [`shinylive` documentation](https://posit-dev.github.io/r-shinylive/)
+- [`r-`shinylive` documentation](https://posit-dev.github.io/r-shinylive/)
+- [`shinylive` documentation](https://shiny.posit.co/py/get-started/shinylive.html)
 
 ### `WebR`
 
@@ -71,5 +74,6 @@ This page provides links to online resources that may be useful when working wit
 - [`stringr` cheatsheet](https://github.com/rstudio/cheatsheets/blob/main/strings.pdf)
 - [`lubridate` cheatsheet](https://rawgit.com/rstudio/cheatsheets/main/lubridate.pdf)
 - [`ggplot2` cheatsheet](https://posit.co/wp-content/uploads/2022/10/data-visualization-1.pdf)
+- [`Shiny` cheatsheet](https://github.com/rstudio/cheatsheets/raw/main/shiny.pdf)
 - [`git` cheatsheet](https://education.github.com/git-cheat-sheet-education.pdf)
 - [GitHub cheatsheet](https://lahirumw.github.io/2025-01-26-github-cheat-sheet/)
