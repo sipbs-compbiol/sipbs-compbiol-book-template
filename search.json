@@ -95,6 +95,105 @@
     ]
   },
   {
+    "objectID": "howto.html",
+    "href": "howto.html",
+    "title": "3  How do I…?",
+    "section": "",
+    "text": "3.1 …create a new page?\nThis page is intended as a FAQ/HowTo for some common questions that might come up when using this template for the first time.\nSome example pages dedicated to common tasks and specific kinds of presentation are included later in the template.\nAssuming that you’re using RStudio, you need to create a new file to hold the Markdown for your page. I usually create a new text file (File -&gt; New File -&gt; Text File or click on the New File icon and select Text File). Write some content in the file and save it as a .qmd file with a meaningful filename (e.g. this file is called howto.qmd).\nAt this point, the file you just wrote could be rendered, but it won’t be linked as a page in the book. To link the file, open the _quarto.yml file and look for the section that starts:\nThen enter the name of your file in the appropriate place, e.g. in the early-section.qmd part, as a chapter following tutorial.qmd in the example below:\nand then render the file.",
+    "crumbs": [
+      "How Do I Use This?",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>How do I…?</span>"
+    ]
+  },
+  {
+    "objectID": "howto.html#create-a-new-page",
+    "href": "howto.html#create-a-new-page",
+    "title": "3  How do I…?",
+    "section": "",
+    "text": "tl;dr\n\n\n\n\nCreate a new plant text file\nWrite Markdown content in your file\nSave your file as a .qmd file (with an appropriate filename)\nAdd your filename to the _quarto.yml file in an appropriate place\nCommit your changes\nPush the changes to your repository\n\n\n\n\n\n# Define chapters and sections here\n  # [E] CHAPTERS AND SECTIONS\n  chapters:\n    - index.qmd\n    - intro.qmd\n\n    - part: early-section.qmd\n      chapters: \n        - tutorial.qmd\n        - howto.qmd      # new page added at this line\n\n\n\n\n\n\nWarning\n\n\n\nThe _quarto.yml file is written in a language called YAML (yet another markup language), and the syntax is important. If you follow the style of the file, you should be fine.\n\n\n\n\n\n\n\n\n\nImportant\n\n\n\nTo ensure your changes are not lost, commit the changes to your repository (your .qmd file, the _quarto.yml file, and any supporting images or other files), and push them to GitHub.",
+    "crumbs": [
+      "How Do I Use This?",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>How do I…?</span>"
+    ]
+  },
+  {
+    "objectID": "howto.html#set-a-value-once-to-be-used-everywhere",
+    "href": "howto.html#set-a-value-once-to-be-used-everywhere",
+    "title": "3  How do I…?",
+    "section": "3.2 …set a value once to be used everywhere?",
+    "text": "3.2 …set a value once to be used everywhere?\nQuarto supports global variables, values that are defined once in a document, and that can be referred to at any point by using a special sequence of characters called a shortcode. The variables are defined in the _variables.yml file, using the YAML markup language.\n\n\n\n\n\n\nTip\n\n\n\nGlobal variables can be useful for defining details that might be repeated multiple times across your book:\n\nadministrative information, like contact emails and numbers\nthe academic year for a module presentation (saves searching for every mention in all pages)\n\n\n\nTo include the value held in a variable called myvar, you would define this in _variables.yml as:\nmyvar: \"The value of the variable\"\nand use the shortcode:\n{{&lt; var myvar &gt;}}\nVariables can be named directly, as with myvar above, but they can also be grouped by category as category.variable combinations. For instance, if you wanted to define a set of telephone numbers for three rooms HW312, HW313, and HW314, you could give these the category phone, defining them as, e.g.:\nphone:\n  HW312: 01-234-657890\n  HW313: 01-234-657891\n  HW313: 01-234-657892\nand use them with shortcode:\n{{&lt; var phone.HW313 &gt;}}\n\nAppearanceMarkdown_variables.yml\n\n\nThis is global_variable: This is an example of a global variable.\nThis is category.value1: This is an example of a category.value variable.\nThis is category.value2: This is another example of a category.value variable.\n\n\nThis is `global_variable`: {{&lt; var global_variable &gt;}}.\n\nThis is `category.value1`: {{&lt; var category.value1 &gt;}}.\n\nThis is `category.value2`: {{&lt; var category.value2 &gt;}}.\n\n\n# Example variables for the howto page\nglobal_variable: \"This is an example of a global variable\"\ncategory:\n  value1: \"This is an example of a `category.value` variable\"\n  value2: \"This is another example of a `category.value` variable\"",
+    "crumbs": [
+      "How Do I Use This?",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>How do I…?</span>"
+    ]
+  },
+  {
+    "objectID": "links.html",
+    "href": "links.html",
+    "title": "4  Useful links",
+    "section": "",
+    "text": "4.1 Quarto\nThis page provides links to online resources that may be useful when working with Quarto or this template.",
+    "crumbs": [
+      "How Do I Use This?",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Useful links</span>"
+    ]
+  },
+  {
+    "objectID": "links.html#quarto",
+    "href": "links.html#quarto",
+    "title": "4  Useful links",
+    "section": "",
+    "text": "Quarto guide\nUsing R with Quarto\n\n\n4.1.1 Markdown\n\nQuarto Markdown basics",
+    "crumbs": [
+      "How Do I Use This?",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Useful links</span>"
+    ]
+  },
+  {
+    "objectID": "links.html#r",
+    "href": "links.html#r",
+    "title": "4  Useful links",
+    "section": "4.2 R",
+    "text": "4.2 R\n\nProgramming with R (Carpentries)\nR for Reproducible Scientific Analysis (Carpentries)\n\n\n4.2.1 Data processing\n\nreadr documentation\ndplyr documentation\ntidyr documentation\nstringr documentation\nlubridate documentation\n\n\n\n4.2.2 Data Visualisation\n\nggplot2 documentation\nggally documentation\nggpubr documentation\n\n\n\n4.2.3 Shiny\n\nShiny documentation",
+    "crumbs": [
+      "How Do I Use This?",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Useful links</span>"
+    ]
+  },
+  {
+    "objectID": "links.html#rstudio",
+    "href": "links.html#rstudio",
+    "title": "4  Useful links",
+    "section": "4.3 RStudio",
+    "text": "4.3 RStudio\n\nRStudio Getting Started\nRStudio tutorial (DataCamp)\nUsing git from RStudio (Carpentries)\n\n\n4.3.1 Shiny\n\nshinylive documentation\n\n\n\n4.3.2 WebR\n\nWebR documentation",
+    "crumbs": [
+      "How Do I Use This?",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Useful links</span>"
+    ]
+  },
+  {
+    "objectID": "links.html#version-control-with-git-and-github",
+    "href": "links.html#version-control-with-git-and-github",
+    "title": "4  Useful links",
+    "section": "4.4 Version Control with git and GitHub",
+    "text": "4.4 Version Control with git and GitHub\n\n4.4.1 git\n\nVersion control with git (Carpentries)\nAbout git (GitHub)\nUsing git with RStudio\n\n\n\n4.4.2 GitHub\n\nGetting started with GitHub\nCreating an account on GitHub\nUsing git/GitHub with R",
+    "crumbs": [
+      "How Do I Use This?",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Useful links</span>"
+    ]
+  },
+  {
+    "objectID": "links.html#cheatsheets",
+    "href": "links.html#cheatsheets",
+    "title": "4  Useful links",
+    "section": "4.5 Cheatsheets",
+    "text": "4.5 Cheatsheets\n\nQuarto/RMarkdown cheatsheet\nreadr cheatsheet\ndplyr cheatsheet\ntidyr cheatsheet\nstringr cheatsheet\nlubridate cheatsheet\nggplot2 cheatsheet\ngit cheatsheet\nGitHub cheatsheet",
+    "crumbs": [
+      "How Do I Use This?",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Useful links</span>"
+    ]
+  },
+  {
     "objectID": "example_pages.html",
     "href": "example_pages.html",
     "title": "Example pages",
@@ -107,221 +206,221 @@
   {
     "objectID": "callouts.html",
     "href": "callouts.html",
-    "title": "3  Custom Callouts",
+    "title": "5  Custom Callouts",
     "section": "",
-    "text": "3.1 Introduction\nThis page demonstrates the use of the quarto-custom-callout extension to provide bespoke callout blocks.\nQuarto provides a number of built-in callout blocks, including:\nbut these do not cover all the cases we might want to use callouts for. It is possible to change the titles of these callouts, such as:\nbut customising the colour and icon of a callout is more difficult. The quarto-custom-callout extension allows us to make our own callouts.",
+    "text": "5.1 Introduction\nThis page demonstrates the use of the quarto-custom-callout extension to provide bespoke callout blocks.\nQuarto provides a number of built-in callout blocks, including:\nbut these do not cover all the cases we might want to use callouts for. It is possible to change the titles of these callouts, such as:\nbut customising the colour and icon of a callout is more difficult. The quarto-custom-callout extension allows us to make our own callouts.",
     "crumbs": [
       "Example pages",
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Custom Callouts</span>"
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Custom Callouts</span>"
     ]
   },
   {
     "objectID": "callouts.html#introduction",
     "href": "callouts.html#introduction",
-    "title": "3  Custom Callouts",
+    "title": "5  Custom Callouts",
     "section": "",
     "text": "Caution\n\n\n\nThe caution callout\n::: { .callout-caution }\nThe caution callout\n:::\n\n\n\n\n\n\n\n\nImportant\n\n\n\nThe important callout\n::: { .callout-info }\nThe important callout\n:::\n\n\n\n\n\n\n\n\nTip\n\n\n\nThe tip callout\n::: { .callout-tip }\nThe tip callout\n:::\n\n\n\n\n\n\n\n\n\nCustom title\n\n\n\nThe tip callout with a custom title\n::: { .callout-tip title=\"Custom title\"}\nThe tip callout with a custom title\n:::\n\n\n\n\n\n\n\n\nNot the caution callout\n\n\n\n::: { .callout-caution }\n## Not the caution callout\n:::",
     "crumbs": [
       "Example pages",
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Custom Callouts</span>"
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Custom Callouts</span>"
     ]
   },
   {
     "objectID": "callouts.html#defining-a-new-callout",
     "href": "callouts.html#defining-a-new-callout",
-    "title": "3  Custom Callouts",
-    "section": "3.2 Defining a new callout",
-    "text": "3.2 Defining a new callout\nTo make a new callout, add a new entry in _quarto.yml in the custom-callout block with the name of the callout. For instance, to add a new case study callout, we could use the code below:\ncustom-callout:\n  callout-case-study:\n    title: \"Case Study\"\n    icon-symbol: \"🔍\"\n    color: \"#FFA500\"\nand ensure that the custom-callout filter is called in _quarto.yml:\nfilters:\n  - custom-callout\n\n\n\n\n\n\nCallout naming convention\n\n\n\nWe have chosen to give all of our callouts for this template the prefix callout- for continuity with the builtin callouts, and to aid with literate programming/self-documentation. Please keep to this convention when you define your own callouts.\n\n\n\n\n\n\n\n\nTip\n\n\n\nNotice that the icon-symbol field accepts unicode icons and emojis.",
+    "title": "5  Custom Callouts",
+    "section": "5.2 Defining a new callout",
+    "text": "5.2 Defining a new callout\nTo make a new callout, add a new entry in _quarto.yml in the custom-callout block with the name of the callout. For instance, to add a new case study callout, we could use the code below:\ncustom-callout:\n  callout-case-study:\n    title: \"Case Study\"\n    icon-symbol: \"🔍\"\n    color: \"#FFA500\"\nand ensure that the custom-callout filter is called in _quarto.yml:\nfilters:\n  - custom-callout\n\n\n\n\n\n\nCallout naming convention\n\n\n\nWe have chosen to give all of our callouts for this template the prefix callout- for continuity with the builtin callouts, and to aid with literate programming/self-documentation. Please keep to this convention when you define your own callouts.\n\n\n\n\n\n\n\n\nTip\n\n\n\nNotice that the icon-symbol field accepts unicode icons and emojis.",
     "crumbs": [
       "Example pages",
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Custom Callouts</span>"
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Custom Callouts</span>"
     ]
   },
   {
     "objectID": "callouts.html#custom-callouts-in-this-template",
     "href": "callouts.html#custom-callouts-in-this-template",
-    "title": "3  Custom Callouts",
-    "section": "3.3 Custom callouts in this template",
-    "text": "3.3 Custom callouts in this template\nWe have defined the custom callouts below:\n\n\n\n\n\n\nCase Study\n\n\n\nFor describing case studies\n::: { .callout-case-study }\nFor describing case studies\n:::\n\n\n\n\n\n\n\n\nChallenge\n\n\n\nFor presenting a challenge to readers\n::: { .callout-challenge }\nFor presenting a challenge to readers\n:::\n\n\n\n\n\n\n\n\nData Analysis\n\n\n\nFor describing datasets and data analysis\n::: { .callout-data }\nFor describing datasets and data analysis\n:::\n\n\n\n\n\n\n\n\nDiscussion Questions:\n\n\n\nFor introducing discussion points\n::: { .callout-discussion }\nFor introducing discussion points\n:::\n\n\n\n\n\n\n\n\nMicrobe Profile\n\n\n\nFor summarising the properties of a microbe\n::: { .callout-microbe }\nFor summarising the properties of a microbe\n:::\n\n\n\n\n\n\n\n\nQuestion\n\n\n\nFor presenting a single question to readers\n::: { .callout-question }\nFor presenting a single question to readers\n:::\n\n\n\n\n\n\n\n\nQuestions\n\n\n\nFor presenting multiple questions to readers\n::: { .callout-questions }\nFor presenting multiple questions to readers\n:::\n\n\n\n\n\n\n\n\nGreat job!\n\n\n\nFor general encouragement\n::: { .callout-thumbs-up }\nFor general encouragement\n:::\n\n\n\n\n\n\n\n\nCallout-todo\n\n\n\nFor highlighting where we still need to do some work\n::: { .callout-todo }\nFor highlighting where we still need to do some work\n:::",
+    "title": "5  Custom Callouts",
+    "section": "5.3 Custom callouts in this template",
+    "text": "5.3 Custom callouts in this template\nWe have defined the custom callouts below:\n\n\n\n\n\n\nCase Study\n\n\n\nFor describing case studies\n::: { .callout-case-study }\nFor describing case studies\n:::\n\n\n\n\n\n\n\n\nChallenge\n\n\n\nFor presenting a challenge to readers\n::: { .callout-challenge }\nFor presenting a challenge to readers\n:::\n\n\n\n\n\n\n\n\nData Analysis\n\n\n\nFor describing datasets and data analysis\n::: { .callout-data }\nFor describing datasets and data analysis\n:::\n\n\n\n\n\n\n\n\nDiscussion Questions:\n\n\n\nFor introducing discussion points\n::: { .callout-discussion }\nFor introducing discussion points\n:::\n\n\n\n\n\n\n\n\nMicrobe Profile\n\n\n\nFor summarising the properties of a microbe\n::: { .callout-microbe }\nFor summarising the properties of a microbe\n:::\n\n\n\n\n\n\n\n\nQuestion\n\n\n\nFor presenting a single question to readers\n::: { .callout-question }\nFor presenting a single question to readers\n:::\n\n\n\n\n\n\n\n\nQuestions\n\n\n\nFor presenting multiple questions to readers\n::: { .callout-questions }\nFor presenting multiple questions to readers\n:::\n\n\n\n\n\n\n\n\nGreat job!\n\n\n\nFor general encouragement\n::: { .callout-thumbs-up }\nFor general encouragement\n:::\n\n\n\n\n\n\n\n\nCallout-todo\n\n\n\nFor highlighting where we still need to do some work\n::: { .callout-todo }\nFor highlighting where we still need to do some work\n:::",
     "crumbs": [
       "Example pages",
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Custom Callouts</span>"
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Custom Callouts</span>"
     ]
   },
   {
     "objectID": "movies.html",
     "href": "movies.html",
-    "title": "4  Embedding video files",
+    "title": "6  Embedding video files",
     "section": "",
-    "text": "4.1 Embedding a video\nThis page demonstrates how to embed video into a Quarto webpage. This is a native capability of Quarto, and requires no extensions to be installed.\nTo embed a video, use the {{&lt; video &gt;}} shortcode. You can embed local files or URLs of online videos:",
+    "text": "6.1 Embedding a video\nThis page demonstrates how to embed video into a Quarto webpage. This is a native capability of Quarto, and requires no extensions to be installed.\nTo embed a video, use the {{&lt; video &gt;}} shortcode. You can embed local files or URLs of online videos:",
     "crumbs": [
       "Example pages",
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Embedding video files</span>"
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Embedding video files</span>"
     ]
   },
   {
     "objectID": "movies.html#embedding-a-video",
     "href": "movies.html#embedding-a-video",
-    "title": "4  Embedding video files",
+    "title": "6  Embedding video files",
     "section": "",
-    "text": "{{&lt; video local-video-file.mp4 &gt;}}\n\n{{&lt; video URL_TO_VIDEO &gt;}}\n\n4.1.1 Local file\n\n\n\n\n\n\nTip\n\n\n\nThis template provides an assets/videos folder, which can be used for adding video files to the repository.\n\n\n\nAppearanceMarkdown\n\n\n\n\n\n{{&lt; video assets/videos/template-tutorial-video-1a.mp4 &gt;}}\n\n\n\n\n\n4.1.2 Remote video file\n\nAppearanceMarkdown\n\n\n\n\n\n{{&lt; video https://youtu.be/dQw4w9WgXcQ?si=_BZIcKuz9U91pGqB &gt;}}\n\n\n\n\n\n4.1.3 Cross-referencing videos\nTo use cross-references with videos, wrap the video in a div using three colons, as in the example below. They can then be referenced using the usual @fig-label method.\n\nAppearanceMarkdown\n\n\n\n\n\n\n\n\nFigure 4.1: This is an example video with cross-referencing (and a legend!)\n\n\n\nAnd it’s cross-referenced like this (Figure 4.1).\n\n\n::: {#fig-example-1}\n\n{{&lt; video assets/videos/template-tutorial-video-1a.mp4 &gt;}}\n\nThis is an example video with cross-referencing (and a legend!)\n\n:::\n\nAnd it's cross-referenced like this (@fig-example-1).",
+    "text": "{{&lt; video local-video-file.mp4 &gt;}}\n\n{{&lt; video URL_TO_VIDEO &gt;}}\n\n6.1.1 Local file\n\n\n\n\n\n\nTip\n\n\n\nThis template provides an assets/videos folder, which can be used for adding video files to the repository.\n\n\n\nAppearanceMarkdown\n\n\n\n\n\n{{&lt; video assets/videos/template-tutorial-video-1a.mp4 &gt;}}\n\n\n\n\n\n6.1.2 Remote video file\n\nAppearanceMarkdown\n\n\n\n\n\n{{&lt; video https://youtu.be/dQw4w9WgXcQ?si=_BZIcKuz9U91pGqB &gt;}}\n\n\n\n\n\n6.1.3 Cross-referencing videos\nTo use cross-references with videos, wrap the video in a div using three colons, as in the example below. They can then be referenced using the usual @fig-label method.\n\nAppearanceMarkdown\n\n\n\n\n\n\n\n\nFigure 6.1: This is an example video with cross-referencing (and a legend!)\n\n\n\nAnd it’s cross-referenced like this (Figure 6.1).\n\n\n::: {#fig-example-1}\n\n{{&lt; video assets/videos/template-tutorial-video-1a.mp4 &gt;}}\n\nThis is an example video with cross-referencing (and a legend!)\n\n:::\n\nAnd it's cross-referenced like this (@fig-example-1).",
     "crumbs": [
       "Example pages",
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Embedding video files</span>"
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Embedding video files</span>"
     ]
   },
   {
     "objectID": "embedpdf.html",
     "href": "embedpdf.html",
-    "title": "5  Embedding PDF files",
+    "title": "7  Embedding PDF files",
     "section": "",
-    "text": "5.1 Native embedding\nThere are two ways to embed PDF files in a Quarto page: by using native Quarto support, or with the embedpdf extension.\nPDF files can be embedded in Quarto using the standard link syntax:",
+    "text": "7.1 Native embedding\nThere are two ways to embed PDF files in a Quarto page: by using native Quarto support, or with the embedpdf extension.\nPDF files can be embedded in Quarto using the standard link syntax:",
     "crumbs": [
       "Example pages",
-      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Embedding PDF files</span>"
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Embedding PDF files</span>"
     ]
   },
   {
     "objectID": "embedpdf.html#native-embedding",
     "href": "embedpdf.html#native-embedding",
-    "title": "5  Embedding PDF files",
+    "title": "7  Embedding PDF files",
     "section": "",
-    "text": "![An example PDF document](example.pdf)\n\nAppearanceCode\n\n\n\n\n\nKiepas et al. (2024)\n\n\n\n\n![Kiepas _et al._ (2024)](assets/papers/kiepas_et_al_2024.pdf)\n\n\n\n\n5.1.1 Controlling embedded document size\nTo set the height and width of the presentation of the embedded document, use brace notation:\n![An example PDF document](example.pdf){width=80% height=300px}\n\nAppearanceCode\n\n\n\n\n\nKiepas et al. (2024)\n\n\n\n\n![Kiepas _et al._ (2024)](assets/papers/kiepas_et_al_2024.pdf){width=100% height=300px}",
+    "text": "![An example PDF document](example.pdf)\n\nAppearanceCode\n\n\n\n\n\nKiepas et al. (2024)\n\n\n\n\n![Kiepas _et al._ (2024)](assets/papers/kiepas_et_al_2024.pdf)\n\n\n\n\n7.1.1 Controlling embedded document size\nTo set the height and width of the presentation of the embedded document, use brace notation:\n![An example PDF document](example.pdf){width=80% height=300px}\n\nAppearanceCode\n\n\n\n\n\nKiepas et al. (2024)\n\n\n\n\n![Kiepas _et al._ (2024)](assets/papers/kiepas_et_al_2024.pdf){width=100% height=300px}",
     "crumbs": [
       "Example pages",
-      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Embedding PDF files</span>"
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Embedding PDF files</span>"
     ]
   },
   {
     "objectID": "embedpdf.html#embedpdf",
     "href": "embedpdf.html#embedpdf",
-    "title": "5  Embedding PDF files",
-    "section": "5.2 embedpdf",
-    "text": "5.2 embedpdf\nembedpdf is a Quarto extension that enables embedding of PDF files directly into Quarto HTML files. The extension is included as part of this template.\n\nembedpdf repository\nembedpdf examples and documentation\n\nWith embedpdf, files are embedded using shortcodes, e.g.:\n{{&lt; pdf example.pdf &gt;}}\n\nAppearanceCode\n\n\nDownload PDF file.\n\n\n{{&lt; pdf assets/papers/kiepas_et_al_2024.pdf &gt;}}\n\n\n\n\n5.2.1 Controlling embedded document size\nTo set the height and width of the presentation of the embedded document, add these variables to the shortcode:\n{{&lt; pdf example.pdf height=200px width=80%&gt;}}\n\nAppearanceCode\n\n\nDownload PDF file.\n\n\n{{&lt; pdf assets/papers/kiepas_et_al_2024.pdf height=300px width=100% &gt;}}\n\n\n\n\n\n5.2.2 Installing embedpdf\nThe extension is packaged as part of this template, but if you do need to install embedpdf in other Quarto projects, use the command:\nquarto add jmgirard/embedpdf",
+    "title": "7  Embedding PDF files",
+    "section": "7.2 embedpdf",
+    "text": "7.2 embedpdf\nembedpdf is a Quarto extension that enables embedding of PDF files directly into Quarto HTML files. The extension is included as part of this template.\n\nembedpdf repository\nembedpdf examples and documentation\n\nWith embedpdf, files are embedded using shortcodes, e.g.:\n{{&lt; pdf example.pdf &gt;}}\n\nAppearanceCode\n\n\nDownload PDF file.\n\n\n{{&lt; pdf assets/papers/kiepas_et_al_2024.pdf &gt;}}\n\n\n\n\n7.2.1 Controlling embedded document size\nTo set the height and width of the presentation of the embedded document, add these variables to the shortcode:\n{{&lt; pdf example.pdf height=200px width=80%&gt;}}\n\nAppearanceCode\n\n\nDownload PDF file.\n\n\n{{&lt; pdf assets/papers/kiepas_et_al_2024.pdf height=300px width=100% &gt;}}\n\n\n\n\n\n7.2.2 Installing embedpdf\nThe extension is packaged as part of this template, but if you do need to install embedpdf in other Quarto projects, use the command:\nquarto add jmgirard/embedpdf",
     "crumbs": [
       "Example pages",
-      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Embedding PDF files</span>"
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Embedding PDF files</span>"
     ]
   },
   {
     "objectID": "quiz.html",
     "href": "quiz.html",
-    "title": "6  Interactive Multiple Choice Questions",
+    "title": "8  Interactive Multiple Choice Questions",
     "section": "",
-    "text": "6.1 Multiple Choice Questions\nThis page demonstrates the setup of an naquiz multiple-choice quiz. The advantage of this extension is that we don’t need to use a Shiny server.",
+    "text": "8.1 Multiple Choice Questions\nThis page demonstrates the setup of an naquiz multiple-choice quiz. The advantage of this extension is that we don’t need to use a Shiny server.",
     "crumbs": [
       "Example pages",
-      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Interactive Multiple Choice Questions</span>"
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Interactive Multiple Choice Questions</span>"
     ]
   },
   {
     "objectID": "quiz.html#multiple-choice-questions",
     "href": "quiz.html#multiple-choice-questions",
-    "title": "6  Interactive Multiple Choice Questions",
+    "title": "8  Interactive Multiple Choice Questions",
     "section": "",
-    "text": "6.1.1 Basic MCQ\nA simple naquiz example looks something like the question below to the reader (click the Markdown tab to see how to write the markdown for it).\n\nAppearanceMarkdown\n\n\n\nBill Gates was the founder of:\n\n\n\n\n ✗Apple\n\n\n ✓Microsoft\n\n\n ✗Facebook\n\n\n ✗Google\n\n\n\n\n\n\n\n:::::{.question}\nBill Gates was the founder of:\n\n::::{.choices}\n\n:::{.choice}\nApple\n:::  \n\n:::{.choice .correct-choice}\nMicrosoft\n:::\n\n:::{.choice}\nFacebook  \n:::\n\n:::{.choice}\nGoogle   \n:::\n\n::::\n:::::\n\n\n\n\n\n\nCaution\n\n\n\nThe nested colon dividers and their counts can look confusing on the page, and missed/extra colons can break the layout of your page.\n\nThe {.question} divider gets five colons.\nThe {.choices} divider that surrounds the choices presented to the reader gets four colons.\nEach individual {.choice} divider gets three colons.\n\n\n\n\n\n\nIt presents a series of radio buttons from which the reader can choose one option. On clicking the option, the reader receives very basic feedback: a red cross (incorrect) or green tick (correct).\n\n\n6.1.2 Add a “clear answer” button\nThe naquiz MCQs can be decorated with useful buttons for reader interaction. The example below has a “Clear Answer” button, which unchecks the reader’s selected answer.\n\nAppearanceMarkdown\n\n\n\nBill Gates was the founder of:\n\n\n\n\n ✗Apple\n\n\n ✓Microsoft\n\n\n ✗Facebook\n\n\n ✗Google\n\n\nClear answer\n\n\n\n\n\n\n\n\n\n\n:::::{.question}\nBill Gates was the founder of:\n\n::::{.choices}\n\n:::{.choice}\nApple\n:::  \n\n:::{.choice .correct-choice}\nMicrosoft\n:::\n\n:::{.choice}\nFacebook  \n:::\n\n:::{.choice}\nGoogle   \n:::\n\n:::{.button-clear title=\"Clear answer\" button-class=\"btn btn-xs\"}\n:::\n\n::::\n:::::\n\n\n\n\n\n\nImportant\n\n\n\nThe button to clear reader answers needs to be linked with the available choices, and so is placed inside the {.choices} division of the MCQ.\n\n\n\n\n\n\n\n6.1.3 Add a “hint” button\nThe example below includes a “hint” button, which the reader can use to get a clue to the answer.\n\nAppearanceMarkdown\n\n\n\nBill Gates was the founder of:\n\n\n\n\n ✗Apple\n\n\n ✓Microsoft\n\n\n ✗Facebook\n\n\n ✗Google\n\n\nClear answer\n\n\n\n\n\n\n\n\n\n\nShow hint\n\nThe company name starts with an ‘M’…\n\n\n\n\n\n\n\n\n:::::{.question}\nBill Gates was the founder of:\n\n::::{.choices}\n\n:::{.choice}\nApple\n:::  \n\n:::{.choice .correct-choice}\nMicrosoft\n:::\n\n:::{.choice}\nFacebook  \n:::\n\n:::{.choice}\nGoogle   \n:::\n\n:::{.button-clear title=\"Clear answer\" button-class=\"btn btn-xs\"}\n:::\n\n::::\n\n::::{.btn-group}\n:::{.button-hint title=\"Show hint\" button-class=\"btn btn-xs\"}\nThe company name starts with an 'M'...\n:::\n::::\n\n:::::\n\n\n\n\n\n\nImportant\n\n\n\nWe can place additional buttons within a button group divider, specified as ::::{.btn-group}, inside the question divider (the five colons :::::).\nHere, we have linked a {.button-hint} that, when clicked, expands to show the hint text.\n\n\n\n\n\n\n\n6.1.4 Add an “answer” button\nWe can add a further button to provide students with the answer we’d like them to read, directly.\n\nAppearanceMarkdown\n\n\n\nBill Gates was the founder of:\n\n\n\n\n ✗Apple\n\n\n ✓Microsoft\n\n\n ✗Facebook\n\n\n ✗Google\n\n\nClear answer\n\n\n\n\n\n\n\n\n\n\nShow hint\n\nThe company name starts with an ‘M’…\n\n\n\n\n\n\nShow Answer\n\nBill Gates and Paul Allen founded Microsoft on April 4, 1975.\n\n\n\n\n\n\n\n\n:::::{.question}\nBill Gates was the founder of:\n\n::::{.choices}\n\n:::{.choice}\nApple\n:::  \n\n:::{.choice .correct-choice}\nMicrosoft\n:::\n\n:::{.choice}\nFacebook  \n:::\n\n:::{.choice}\nGoogle   \n:::\n\n:::{.button-clear title=\"Clear answer\" button-class=\"btn btn-xs\"}\n:::\n\n::::\n\n::::{.btn-group}\n:::{.button-hint title=\"Show hint\" button-class=\"btn btn-xs\"}\nThe company name starts with an 'M'...\n:::\n::::\n\n:::{.button-answer title=\"Show Answer\" button-class=\"btn btn-xs\"}\nBill Gates and Paul Allen founded Microsoft on April 4, 1975.\n:::\n:::::\n\n\n\n\n\n\nImportant\n\n\n\nWe can place more than one button in the button group divider. Here, we have linked a {.button-answer} that, when clicked, expands to show the hint text.\n\n\n\n\n\n\n\n6.1.5 Placing an MCQ in a custom callout\nWe have created a custom callout called callout-question which can be used to make MCQ stand out a bit more, with a consistent visual style.\n\nAppearanceMarkdown\n\n\n\n\n\n\n\n\nQuestion\n\n\n\n\nBill Gates was the founder of:\n\n\n\n\n ✗Apple\n\n\n ✓Microsoft\n\n\n ✗Facebook\n\n\n ✗Google\n\n\nClear answer\n\n\n\n\n\n\n\n\n\n\n\nShow hint\n\nThe company name starts with an ‘M’…\n\n\n\n\n\n\nShow Answer\n\nBill Gates and Paul Allen founded Microsoft on April 4, 1975.\n\n\n\n\n\n\n\n\n\n::: { .callout-question }\n\n:::::{.question}\nBill Gates was the founder of:\n\n::::{.choices}\n\n:::{.choice}\nApple\n:::  \n\n:::{.choice .correct-choice}\nMicrosoft\n:::\n\n:::{.choice}\nFacebook  \n:::\n\n:::{.choice}\nGoogle   \n:::\n\n:::{.button-clear title=\"Clear answer\" button-class=\"btn btn-xs\"}\n:::\n\n::::\n:::::\n\n::::{.btn-group}\n:::{.button-hint title=\"Show hint\" button-class=\"btn btn-xs\"}\nThe company name starts with an 'M'...\n:::\n\n:::{.button-answer title=\"Show Answer\" button-class=\"btn btn-xs\"}\nBill Gates and Paul Allen founded Microsoft on April 4, 1975.\n:::\n::::\n\n:::\n\n\n\n\n\n6.1.6 Randomising question values\nWe can use R or Python to generate random values that can be used to compose questions that are different each time the page is rendered, by inserting a suitable R/Python code block and using the values in the question.\n\n\n\n\n\n\nCaution\n\n\n\nThe values do not change when the page is reloaded by a reader. The values are calculated when the pages are rendered.\nFor values that change when the page is refreshed, or on demand, use an R Shiny or Shinylive solution, or a solution like Numbas.\n\n\n\nAppearanceMarkdownR code\n\n\n\n\n\n\n\n\nQuestion\n\n\n\n\nWhat is the sum of 2 and 17?\n\n\n\n\n ✗-15\n\n\n ✓19\n\n\n ✗15\n\n\n ✗34\n\n\nClear answer\n\n\n\n\n\n\n\n\n\n\n\nShow hint\n\nYou need to add the two numbers 2 and 17\n\n\n\n\n\n\nShow Answer\n\n2 + 17 = 19\n\n\n\n\n\n\n\n\n\n::: { .callout-question }\n\n:::::{.question}\nWhat is the sum of `r x_val` and `r y_val`?\n\n::::{.choices}\n\n:::{.choice}\n`r x_val - y_val`\n:::  \n\n:::{.choice .correct-choice}\n`r x_val + y_val`\n:::\n\n:::{.choice}\n`r y_val - x_val`\n:::\n\n:::{.choice}\n`r y_val * x_val`\n:::\n\n:::{.button-clear title=\"Clear answer\" button-class=\"btn btn-xs\"}\n:::\n\n::::\n:::::\n\n::::{.btn-group}\n:::{.button-hint title=\"Show hint\" button-class=\"btn btn-xs\"}\nYou need to add the two numbers `r x_val` and `r y_val`\n:::\n\n:::{.button-answer title=\"Show Answer\" button-class=\"btn btn-xs\"}\n`r x_val` + `r y_val` = `r x_val + y_val`\n:::\n::::\n\n:::\n\n\n#| show: false\n#| echo: false\n\nx_val &lt;- sample(1:10, 1)\ny_val &lt;- sample(11:20, 1)",
+    "text": "8.1.1 Basic MCQ\nA simple naquiz example looks something like the question below to the reader (click the Markdown tab to see how to write the markdown for it).\n\nAppearanceMarkdown\n\n\n\nBill Gates was the founder of:\n\n\n\n\n ✗Apple\n\n\n ✓Microsoft\n\n\n ✗Facebook\n\n\n ✗Google\n\n\n\n\n\n\n\n:::::{.question}\nBill Gates was the founder of:\n\n::::{.choices}\n\n:::{.choice}\nApple\n:::  \n\n:::{.choice .correct-choice}\nMicrosoft\n:::\n\n:::{.choice}\nFacebook  \n:::\n\n:::{.choice}\nGoogle   \n:::\n\n::::\n:::::\n\n\n\n\n\n\nCaution\n\n\n\nThe nested colon dividers and their counts can look confusing on the page, and missed/extra colons can break the layout of your page.\n\nThe {.question} divider gets five colons.\nThe {.choices} divider that surrounds the choices presented to the reader gets four colons.\nEach individual {.choice} divider gets three colons.\n\n\n\n\n\n\nIt presents a series of radio buttons from which the reader can choose one option. On clicking the option, the reader receives very basic feedback: a red cross (incorrect) or green tick (correct).\n\n\n8.1.2 Add a “clear answer” button\nThe naquiz MCQs can be decorated with useful buttons for reader interaction. The example below has a “Clear Answer” button, which unchecks the reader’s selected answer.\n\nAppearanceMarkdown\n\n\n\nBill Gates was the founder of:\n\n\n\n\n ✗Apple\n\n\n ✓Microsoft\n\n\n ✗Facebook\n\n\n ✗Google\n\n\nClear answer\n\n\n\n\n\n\n\n\n\n\n:::::{.question}\nBill Gates was the founder of:\n\n::::{.choices}\n\n:::{.choice}\nApple\n:::  \n\n:::{.choice .correct-choice}\nMicrosoft\n:::\n\n:::{.choice}\nFacebook  \n:::\n\n:::{.choice}\nGoogle   \n:::\n\n:::{.button-clear title=\"Clear answer\" button-class=\"btn btn-xs\"}\n:::\n\n::::\n:::::\n\n\n\n\n\n\nImportant\n\n\n\nThe button to clear reader answers needs to be linked with the available choices, and so is placed inside the {.choices} division of the MCQ.\n\n\n\n\n\n\n\n8.1.3 Add a “hint” button\nThe example below includes a “hint” button, which the reader can use to get a clue to the answer.\n\nAppearanceMarkdown\n\n\n\nBill Gates was the founder of:\n\n\n\n\n ✗Apple\n\n\n ✓Microsoft\n\n\n ✗Facebook\n\n\n ✗Google\n\n\nClear answer\n\n\n\n\n\n\n\n\n\n\nShow hint\n\nThe company name starts with an ‘M’…\n\n\n\n\n\n\n\n\n:::::{.question}\nBill Gates was the founder of:\n\n::::{.choices}\n\n:::{.choice}\nApple\n:::  \n\n:::{.choice .correct-choice}\nMicrosoft\n:::\n\n:::{.choice}\nFacebook  \n:::\n\n:::{.choice}\nGoogle   \n:::\n\n:::{.button-clear title=\"Clear answer\" button-class=\"btn btn-xs\"}\n:::\n\n::::\n\n::::{.btn-group}\n:::{.button-hint title=\"Show hint\" button-class=\"btn btn-xs\"}\nThe company name starts with an 'M'...\n:::\n::::\n\n:::::\n\n\n\n\n\n\nImportant\n\n\n\nWe can place additional buttons within a button group divider, specified as ::::{.btn-group}, inside the question divider (the five colons :::::).\nHere, we have linked a {.button-hint} that, when clicked, expands to show the hint text.\n\n\n\n\n\n\n\n8.1.4 Add an “answer” button\nWe can add a further button to provide students with the answer we’d like them to read, directly.\n\nAppearanceMarkdown\n\n\n\nBill Gates was the founder of:\n\n\n\n\n ✗Apple\n\n\n ✓Microsoft\n\n\n ✗Facebook\n\n\n ✗Google\n\n\nClear answer\n\n\n\n\n\n\n\n\n\n\nShow hint\n\nThe company name starts with an ‘M’…\n\n\n\n\n\n\nShow Answer\n\nBill Gates and Paul Allen founded Microsoft on April 4, 1975.\n\n\n\n\n\n\n\n\n:::::{.question}\nBill Gates was the founder of:\n\n::::{.choices}\n\n:::{.choice}\nApple\n:::  \n\n:::{.choice .correct-choice}\nMicrosoft\n:::\n\n:::{.choice}\nFacebook  \n:::\n\n:::{.choice}\nGoogle   \n:::\n\n:::{.button-clear title=\"Clear answer\" button-class=\"btn btn-xs\"}\n:::\n\n::::\n\n::::{.btn-group}\n:::{.button-hint title=\"Show hint\" button-class=\"btn btn-xs\"}\nThe company name starts with an 'M'...\n:::\n::::\n\n:::{.button-answer title=\"Show Answer\" button-class=\"btn btn-xs\"}\nBill Gates and Paul Allen founded Microsoft on April 4, 1975.\n:::\n:::::\n\n\n\n\n\n\nImportant\n\n\n\nWe can place more than one button in the button group divider. Here, we have linked a {.button-answer} that, when clicked, expands to show the hint text.\n\n\n\n\n\n\n\n8.1.5 Placing an MCQ in a custom callout\nWe have created a custom callout called callout-question which can be used to make MCQ stand out a bit more, with a consistent visual style.\n\nAppearanceMarkdown\n\n\n\n\n\n\n\n\nQuestion\n\n\n\n\nBill Gates was the founder of:\n\n\n\n\n ✗Apple\n\n\n ✓Microsoft\n\n\n ✗Facebook\n\n\n ✗Google\n\n\nClear answer\n\n\n\n\n\n\n\n\n\n\n\nShow hint\n\nThe company name starts with an ‘M’…\n\n\n\n\n\n\nShow Answer\n\nBill Gates and Paul Allen founded Microsoft on April 4, 1975.\n\n\n\n\n\n\n\n\n\n::: { .callout-question }\n\n:::::{.question}\nBill Gates was the founder of:\n\n::::{.choices}\n\n:::{.choice}\nApple\n:::  \n\n:::{.choice .correct-choice}\nMicrosoft\n:::\n\n:::{.choice}\nFacebook  \n:::\n\n:::{.choice}\nGoogle   \n:::\n\n:::{.button-clear title=\"Clear answer\" button-class=\"btn btn-xs\"}\n:::\n\n::::\n:::::\n\n::::{.btn-group}\n:::{.button-hint title=\"Show hint\" button-class=\"btn btn-xs\"}\nThe company name starts with an 'M'...\n:::\n\n:::{.button-answer title=\"Show Answer\" button-class=\"btn btn-xs\"}\nBill Gates and Paul Allen founded Microsoft on April 4, 1975.\n:::\n::::\n\n:::\n\n\n\n\n\n8.1.6 Randomising question values\nWe can use R or Python to generate random values that can be used to compose questions that are different each time the page is rendered, by inserting a suitable R/Python code block and using the values in the question.\n\n\n\n\n\n\nCaution\n\n\n\nThe values do not change when the page is reloaded by a reader. The values are calculated when the pages are rendered.\nFor values that change when the page is refreshed, or on demand, use an R Shiny or Shinylive solution, or a solution like Numbas.\n\n\n\nAppearanceMarkdownR code\n\n\n\n\n\n\n\n\nQuestion\n\n\n\n\nWhat is the sum of 10 and 20?\n\n\n\n\n ✗-10\n\n\n ✓30\n\n\n ✗10\n\n\n ✗200\n\n\nClear answer\n\n\n\n\n\n\n\n\n\n\n\nShow hint\n\nYou need to add the two numbers 10 and 20\n\n\n\n\n\n\nShow Answer\n\n10 + 20 = 30\n\n\n\n\n\n\n\n\n\n::: { .callout-question }\n\n:::::{.question}\nWhat is the sum of `r x_val` and `r y_val`?\n\n::::{.choices}\n\n:::{.choice}\n`r x_val - y_val`\n:::  \n\n:::{.choice .correct-choice}\n`r x_val + y_val`\n:::\n\n:::{.choice}\n`r y_val - x_val`\n:::\n\n:::{.choice}\n`r y_val * x_val`\n:::\n\n:::{.button-clear title=\"Clear answer\" button-class=\"btn btn-xs\"}\n:::\n\n::::\n:::::\n\n::::{.btn-group}\n:::{.button-hint title=\"Show hint\" button-class=\"btn btn-xs\"}\nYou need to add the two numbers `r x_val` and `r y_val`\n:::\n\n:::{.button-answer title=\"Show Answer\" button-class=\"btn btn-xs\"}\n`r x_val` + `r y_val` = `r x_val + y_val`\n:::\n::::\n\n:::\n\n\n#| show: false\n#| echo: false\n\nx_val &lt;- sample(1:10, 1)\ny_val &lt;- sample(11:20, 1)",
     "crumbs": [
       "Example pages",
-      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Interactive Multiple Choice Questions</span>"
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Interactive Multiple Choice Questions</span>"
     ]
   },
   {
     "objectID": "webr-example.html",
     "href": "webr-example.html",
-    "title": "7  WebR Playground",
+    "title": "9  WebR Playground",
     "section": "",
-    "text": "7.1 Introduction\nThis page provides a WebR cell for use as a playground to experiment with example datasets, and describes how to include WebR on other Quarto pages.",
+    "text": "9.1 Introduction\nThis page provides a WebR cell for use as a playground to experiment with example datasets, and describes how to include WebR on other Quarto pages.",
     "crumbs": [
       "Example pages",
-      "<span class='chapter-number'>7</span>  <span class='chapter-title'>`WebR` Playground</span>"
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>`WebR` Playground</span>"
     ]
   },
   {
     "objectID": "webr-example.html#introduction",
     "href": "webr-example.html#introduction",
-    "title": "7  WebR Playground",
+    "title": "9  WebR Playground",
     "section": "",
     "text": "WebR documentation",
     "crumbs": [
       "Example pages",
-      "<span class='chapter-number'>7</span>  <span class='chapter-title'>`WebR` Playground</span>"
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>`WebR` Playground</span>"
     ]
   },
   {
     "objectID": "webr-example.html#playground",
     "href": "webr-example.html#playground",
-    "title": "7  WebR Playground",
-    "section": "7.2 Playground",
-    "text": "7.2 Playground\n\nAppearanceMarkdown\n\n\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\n\n\n```{webr-r}\n# Use this WebR cell to experiment with using R. You can do almost anything\n# by typing in this code cell that you can do in R, including plotting graphs.\n#\n# Why not try the command:\n#\n# plot(penguins)\n#\n# and click the \"Run code\" icon?\n\n```",
+    "title": "9  WebR Playground",
+    "section": "9.2 Playground",
+    "text": "9.2 Playground\n\nAppearanceMarkdown\n\n\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\n\n\n```{webr-r}\n# Use this WebR cell to experiment with using R. You can do almost anything\n# by typing in this code cell that you can do in R, including plotting graphs.\n#\n# Why not try the command:\n#\n# plot(penguins)\n#\n# and click the \"Run code\" icon?\n\n```",
     "crumbs": [
       "Example pages",
-      "<span class='chapter-number'>7</span>  <span class='chapter-title'>`WebR` Playground</span>"
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>`WebR` Playground</span>"
     ]
   },
   {
     "objectID": "webr-example.html#examples-to-try",
     "href": "webr-example.html#examples-to-try",
-    "title": "7  WebR Playground",
-    "section": "7.3 Examples to try",
-    "text": "7.3 Examples to try\n\nPalmer PenguinsPlot reporter curvesOther datasets\n\n\nThe penguins dataset contains data about three different species of penguins. You can use the R commands below to investigate the data:\nglimpse(penguins)  # look at the format of the dataset\nplot(penguins)     # plot a visual overview of the dataset\n\n# Plot the count of penguins in each species as a bar chart\nggplot(penguins, aes(species, fill=species)) + geom_bar()\n\n# Break down the distribution by species in a facet plot\nggplot(penguins, aes(species, fill=species)) + geom_bar() + facet_wrap(~sex)\n\n# Make a box and whisker plot of penguin body mass by species:\nggplot(penguins, aes(x=species, y=body_mass_g, fill=species)) + geom_boxplot()\n\n# Plot the body mass for each sex side-by-side\nggplot(penguins, aes(x=species, y=body_mass_g, fill=sex)) + geom_boxplot()\n\n# Investigate correlation between body mass and flipper length:\nggplot(penguins, aes(x=body_mass_g, y=flipper_length_mm)) + geom_point()\n\n# Colour datapoints by species:\nggplot(penguins, aes(x=body_mass_g, y=flipper_length_mm, colour=species)) +\n         geom_point()\n\n# Fit a linear regression to each species separately:\nggplot(penguins, aes(x=body_mass_g, y=flipper_length_mm, colour=species)) +\n         geom_point() +\n         geom_smooth(method=\"lm\")\n\n\nOne of our BM214 workshops involves a WebR-supported interactive exercise involving simulated reporter curves.\nHere, we have downloaded some data from the online repository and made it available as though it was a dataset on the filesystem, reporter_curves.csv.\n# Load reporter experiment data\ndata &lt;- read.csv(\"reporter_curves.csv\")\n\nglimpse(data)  # Summarise the data format\n\n# Plot absorbance against concentration as a facet plot\nggplot(data, aes(x=conc, y=abs_ratio, color=sample)) + geom_point() +\n  geom_line() + facet_wrap(~sample)\n\n\nR comes with a number of example datasets you can practice with, including:\n\nmtcars: fuel consumption and other statistic for 32 automobiles\nTitanic: the fates of passengers from the maiden voyage of the ocean liner Titanic\n\nYou can see a full list by running the command\nlibrary(help = \"datasets\")",
+    "title": "9  WebR Playground",
+    "section": "9.3 Examples to try",
+    "text": "9.3 Examples to try\n\nPalmer PenguinsPlot reporter curvesOther datasets\n\n\nThe penguins dataset contains data about three different species of penguins. You can use the R commands below to investigate the data:\nglimpse(penguins)  # look at the format of the dataset\nplot(penguins)     # plot a visual overview of the dataset\n\n# Plot the count of penguins in each species as a bar chart\nggplot(penguins, aes(species, fill=species)) + geom_bar()\n\n# Break down the distribution by species in a facet plot\nggplot(penguins, aes(species, fill=species)) + geom_bar() + facet_wrap(~sex)\n\n# Make a box and whisker plot of penguin body mass by species:\nggplot(penguins, aes(x=species, y=body_mass_g, fill=species)) + geom_boxplot()\n\n# Plot the body mass for each sex side-by-side\nggplot(penguins, aes(x=species, y=body_mass_g, fill=sex)) + geom_boxplot()\n\n# Investigate correlation between body mass and flipper length:\nggplot(penguins, aes(x=body_mass_g, y=flipper_length_mm)) + geom_point()\n\n# Colour datapoints by species:\nggplot(penguins, aes(x=body_mass_g, y=flipper_length_mm, colour=species)) +\n         geom_point()\n\n# Fit a linear regression to each species separately:\nggplot(penguins, aes(x=body_mass_g, y=flipper_length_mm, colour=species)) +\n         geom_point() +\n         geom_smooth(method=\"lm\")\n\n\nOne of our BM214 workshops involves a WebR-supported interactive exercise involving simulated reporter curves.\nHere, we have downloaded some data from the online repository and made it available as though it was a dataset on the filesystem, reporter_curves.csv.\n# Load reporter experiment data\ndata &lt;- read.csv(\"reporter_curves.csv\")\n\nglimpse(data)  # Summarise the data format\n\n# Plot absorbance against concentration as a facet plot\nggplot(data, aes(x=conc, y=abs_ratio, color=sample)) + geom_point() +\n  geom_line() + facet_wrap(~sample)\n\n\nR comes with a number of example datasets you can practice with, including:\n\nmtcars: fuel consumption and other statistic for 32 automobiles\nTitanic: the fates of passengers from the maiden voyage of the ocean liner Titanic\n\nYou can see a full list by running the command\nlibrary(help = \"datasets\")",
     "crumbs": [
       "Example pages",
-      "<span class='chapter-number'>7</span>  <span class='chapter-title'>`WebR` Playground</span>"
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>`WebR` Playground</span>"
     ]
   },
   {
     "objectID": "webr-example.html#setting-up-webr",
     "href": "webr-example.html#setting-up-webr",
-    "title": "7  WebR Playground",
-    "section": "7.4 Setting up WebR",
-    "text": "7.4 Setting up WebR\nThere are three important elements to including WebR on a Quarto page: the YAML header, the setup code block, and the WebR cell.\nYou can see an example of how to set up WebR on any Quarto page by inspecting the .qmd source for this page.\n\n7.4.1 YAML header\nTo use WebR on a Quarto page, you need to include an appropriate YAML header at the top of the page:\n---\nwebr:\n  packages: [\"tidyverse\", \"palmerpenguins\"]\nfilters:\n  - webr\n---\nPackages to be imported into WebR should be specified in the list, as tidyverse and palmerpenguins are, here. The webr filter must be loaded.\n\n\n7.4.2 WebR setup block\nThere is a special R code block needed to prepare the WebR instance. For this page, the code block\n```{webr-r}\n#| context: setup\n\n# Download reporter data\ndownload.file('https://raw.githubusercontent.com/sipbs-compbiol/BM214-Workshop-3/main/assets/data/reporter_curves.csv', 'reporter_curves.csv')\n\nlibrary(palmerpenguins)\nlibrary(tidyverse)\n```\ndeclares that it has the setup context, so will be run when the WebR instance starts. The download.file() call pulls the reporter_curves.csv file from a GitHub repository and makes it available in WebR, as if it were a real file, with the name reporter_curves.csv. The last three lines import R packages into the WebR environment.\n\n\n7.4.3 The WebR code cell\nThe minimal WebR code cell looks like this:\n```{webr-r}\n```\nbut it is more helpful, and more usual, to include some example code or comments, as in the example below:\n\nAppearanceMarkdown\n\n\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\n\n\n```{webr-r}\n# You can use `R` as a calculator\n\n1 * sin(1)\n```",
+    "title": "9  WebR Playground",
+    "section": "9.4 Setting up WebR",
+    "text": "9.4 Setting up WebR\nThere are three important elements to including WebR on a Quarto page: the YAML header, the setup code block, and the WebR cell.\nYou can see an example of how to set up WebR on any Quarto page by inspecting the .qmd source for this page.\n\n9.4.1 YAML header\nTo use WebR on a Quarto page, you need to include an appropriate YAML header at the top of the page:\n---\nwebr:\n  packages: [\"tidyverse\", \"palmerpenguins\"]\nfilters:\n  - webr\n---\nPackages to be imported into WebR should be specified in the list, as tidyverse and palmerpenguins are, here. The webr filter must be loaded.\n\n\n9.4.2 WebR setup block\nThere is a special R code block needed to prepare the WebR instance. For this page, the code block\n```{webr-r}\n#| context: setup\n\n# Download reporter data\ndownload.file('https://raw.githubusercontent.com/sipbs-compbiol/BM214-Workshop-3/main/assets/data/reporter_curves.csv', 'reporter_curves.csv')\n\nlibrary(palmerpenguins)\nlibrary(tidyverse)\n```\ndeclares that it has the setup context, so will be run when the WebR instance starts. The download.file() call pulls the reporter_curves.csv file from a GitHub repository and makes it available in WebR, as if it were a real file, with the name reporter_curves.csv. The last three lines import R packages into the WebR environment.\n\n\n9.4.3 The WebR code cell\nThe minimal WebR code cell looks like this:\n```{webr-r}\n```\nbut it is more helpful, and more usual, to include some example code or comments, as in the example below:\n\nAppearanceMarkdown\n\n\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\n\n\n```{webr-r}\n# You can use `R` as a calculator\n\n1 * sin(1)\n```",
     "crumbs": [
       "Example pages",
-      "<span class='chapter-number'>7</span>  <span class='chapter-title'>`WebR` Playground</span>"
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>`WebR` Playground</span>"
     ]
   },
   {
     "objectID": "shinylive.html",
     "href": "shinylive.html",
-    "title": "8  Using shinylive",
+    "title": "10  Using shinylive",
     "section": "",
-    "text": "8.1 Installing the shinylive extension\nshinylive is an extension and R package that allows for embedding a serverless Shiny application in a Quarto page, as we do in Figure 8.1.\nFor local use and development you will need to install the shinylive package:\nTo install the shinylive Quarto extension, use the commmand:",
+    "text": "10.1 Installing the shinylive extension\nshinylive is an extension and R package that allows for embedding a serverless Shiny application in a Quarto page, as we do in Figure 10.1.\nFor local use and development you will need to install the shinylive package:\nTo install the shinylive Quarto extension, use the commmand:",
     "crumbs": [
       "Example pages",
-      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Using `shinylive`</span>"
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Using `shinylive`</span>"
     ]
   },
   {
     "objectID": "shinylive.html#installing-the-shinylive-extension",
     "href": "shinylive.html#installing-the-shinylive-extension",
-    "title": "8  Using shinylive",
+    "title": "10  Using shinylive",
     "section": "",
     "text": "shinylive extension repository\n\n\ninstall.packages(\"shinylive\")\n\nquarto add quarto-ext/shinylive\n\n\n\n\n\n\nImportant\n\n\n\nThe shinylive extension is installed as part of this template, and the shinylive package is installed via the DESCRIPTION file. This extension should work automatically in the rendered GitHub pages.",
     "crumbs": [
       "Example pages",
-      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Using `shinylive`</span>"
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Using `shinylive`</span>"
     ]
   },
   {
     "objectID": "numbas.html",
     "href": "numbas.html",
-    "title": "9  Embedding Numbas Questions",
+    "title": "11  Embedding Numbas Questions",
     "section": "",
-    "text": "9.1 Embedding a Numbas question\nNumbas is an open-source e-assessment system aimed at mathematics and other numerate disciplines. It generates SCORM 2004-compliant, self-contained assessment packages, and can present randomised questions for practice and assessment.\nTo embed a Numbas question or exam, Run the question/exam from the Numbas editor, and click on the Share button. This will reveal a URL that can be embedded in your Quarto page.",
+    "text": "11.1 Embedding a Numbas question\nNumbas is an open-source e-assessment system aimed at mathematics and other numerate disciplines. It generates SCORM 2004-compliant, self-contained assessment packages, and can present randomised questions for practice and assessment.\nTo embed a Numbas question or exam, Run the question/exam from the Numbas editor, and click on the Share button. This will reveal a URL that can be embedded in your Quarto page.",
     "crumbs": [
       "Example pages",
-      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Embedding Numbas Questions</span>"
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Embedding Numbas Questions</span>"
     ]
   },
   {
     "objectID": "numbas.html#embedding-a-numbas-question",
     "href": "numbas.html#embedding-a-numbas-question",
-    "title": "9  Embedding Numbas Questions",
+    "title": "11  Embedding Numbas Questions",
     "section": "",
     "text": "AppearanceMarkdown\n\n\n\n\n\n&lt;iframe src=\"[URL]\" width=\"780\" height=\"500\"&gt;&lt;/iframe&gt;",
     "crumbs": [
       "Example pages",
-      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Embedding Numbas Questions</span>"
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Embedding Numbas Questions</span>"
     ]
   },
   {

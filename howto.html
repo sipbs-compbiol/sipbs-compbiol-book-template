@@ -8,7 +8,7 @@
 
 <meta name="author" content="Leighton Pritchard">
 
-<title>11&nbsp; Embedding Numbas Questions – THE TITLE OF THE BOOK</title>
+<title>3&nbsp; How do I…? – THE TITLE OF THE BOOK</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -66,8 +66,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./references.html" rel="next">
-<link href="./shinylive.html" rel="prev">
+<link href="./links.html" rel="next">
+<link href="./tutorial.html" rel="prev">
 <link href="./icon_32.png" rel="icon" type="image/png">
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
@@ -108,17 +108,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   }
 }</script>
 <style>
-div.callout-callout-todo.callout {
-  border-left-color: pink;
-}
-div.callout-callout-todo.callout-style-default > .callout-header {
-  background-color: rgb(from pink r g b / 13%);
-}
-div.callout-callout-todo .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
-div.callout-callout-todo.callout-style-default .callout-icon::before, div.callout-callout-todo.callout-titled .callout-icon::before {
-  content: '📝';
-  background-image: none;
-}
 div.callout-callout-challenge.callout {
   border-left-color: aquamarine;
 }
@@ -128,61 +117,6 @@ div.callout-callout-challenge.callout-style-default > .callout-header {
 div.callout-callout-challenge .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
 div.callout-callout-challenge.callout-style-default .callout-icon::before, div.callout-callout-challenge.callout-titled .callout-icon::before {
   content: '🧑‍🏫';
-  background-image: none;
-}
-div.callout-callout-discussion.callout {
-  border-left-color: #BA55D3;
-}
-div.callout-callout-discussion.callout-style-default > .callout-header {
-  background-color: rgba(186, 85, 211, 0.13);
-}
-div.callout-callout-discussion .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
-div.callout-callout-discussion.callout-style-default .callout-icon::before, div.callout-callout-discussion.callout-titled .callout-icon::before {
-  content: '✨';
-  background-image: none;
-}
-div.callout-callout-thumbs-up.callout {
-  border-left-color: #008000;
-}
-div.callout-callout-thumbs-up.callout-style-default > .callout-header {
-  background-color: rgba(0, 128, 0, 0.13);
-}
-div.callout-callout-thumbs-up .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
-div.callout-callout-thumbs-up.callout-style-default .callout-icon::before, div.callout-callout-thumbs-up.callout-titled .callout-icon::before {
-  content: '👍';
-  background-image: none;
-}
-div.callout-callout-questions.callout {
-  border-left-color: yellow;
-}
-div.callout-callout-questions.callout-style-default > .callout-header {
-  background-color: rgb(from yellow r g b / 13%);
-}
-div.callout-callout-questions .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
-div.callout-callout-questions.callout-style-default .callout-icon::before, div.callout-callout-questions.callout-titled .callout-icon::before {
-  content: '🙋️';
-  background-image: none;
-}
-div.callout-callout-question.callout {
-  border-left-color: yellow;
-}
-div.callout-callout-question.callout-style-default > .callout-header {
-  background-color: rgb(from yellow r g b / 13%);
-}
-div.callout-callout-question .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
-div.callout-callout-question.callout-style-default .callout-icon::before, div.callout-callout-question.callout-titled .callout-icon::before {
-  content: '🙋';
-  background-image: none;
-}
-div.callout-callout-microbe.callout {
-  border-left-color: #1E90FF;
-}
-div.callout-callout-microbe.callout-style-default > .callout-header {
-  background-color: rgba(30, 144, 255, 0.13);
-}
-div.callout-callout-microbe .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
-div.callout-callout-microbe.callout-style-default .callout-icon::before, div.callout-callout-microbe.callout-titled .callout-icon::before {
-  content: '🧫';
   background-image: none;
 }
 div.callout-callout-case-study.callout {
@@ -196,6 +130,39 @@ div.callout-callout-case-study.callout-style-default .callout-icon::before, div.
   content: '🔍';
   background-image: none;
 }
+div.callout-callout-question.callout {
+  border-left-color: yellow;
+}
+div.callout-callout-question.callout-style-default > .callout-header {
+  background-color: rgb(from yellow r g b / 13%);
+}
+div.callout-callout-question .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
+div.callout-callout-question.callout-style-default .callout-icon::before, div.callout-callout-question.callout-titled .callout-icon::before {
+  content: '🙋';
+  background-image: none;
+}
+div.callout-callout-thumbs-up.callout {
+  border-left-color: #008000;
+}
+div.callout-callout-thumbs-up.callout-style-default > .callout-header {
+  background-color: rgba(0, 128, 0, 0.13);
+}
+div.callout-callout-thumbs-up .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
+div.callout-callout-thumbs-up.callout-style-default .callout-icon::before, div.callout-callout-thumbs-up.callout-titled .callout-icon::before {
+  content: '👍';
+  background-image: none;
+}
+div.callout-callout-microbe.callout {
+  border-left-color: #1E90FF;
+}
+div.callout-callout-microbe.callout-style-default > .callout-header {
+  background-color: rgba(30, 144, 255, 0.13);
+}
+div.callout-callout-microbe .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
+div.callout-callout-microbe.callout-style-default .callout-icon::before, div.callout-callout-microbe.callout-titled .callout-icon::before {
+  content: '🧫';
+  background-image: none;
+}
 div.callout-callout-data.callout {
   border-left-color: #32CD32;
 }
@@ -205,6 +172,39 @@ div.callout-callout-data.callout-style-default > .callout-header {
 div.callout-callout-data .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
 div.callout-callout-data.callout-style-default .callout-icon::before, div.callout-callout-data.callout-titled .callout-icon::before {
   content: '📊';
+  background-image: none;
+}
+div.callout-callout-discussion.callout {
+  border-left-color: #BA55D3;
+}
+div.callout-callout-discussion.callout-style-default > .callout-header {
+  background-color: rgba(186, 85, 211, 0.13);
+}
+div.callout-callout-discussion .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
+div.callout-callout-discussion.callout-style-default .callout-icon::before, div.callout-callout-discussion.callout-titled .callout-icon::before {
+  content: '✨';
+  background-image: none;
+}
+div.callout-callout-questions.callout {
+  border-left-color: yellow;
+}
+div.callout-callout-questions.callout-style-default > .callout-header {
+  background-color: rgb(from yellow r g b / 13%);
+}
+div.callout-callout-questions .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
+div.callout-callout-questions.callout-style-default .callout-icon::before, div.callout-callout-questions.callout-titled .callout-icon::before {
+  content: '🙋️';
+  background-image: none;
+}
+div.callout-callout-todo.callout {
+  border-left-color: pink;
+}
+div.callout-callout-todo.callout-style-default > .callout-header {
+  background-color: rgb(from pink r g b / 13%);
+}
+div.callout-callout-todo .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
+div.callout-callout-todo.callout-style-default .callout-icon::before, div.callout-callout-todo.callout-titled .callout-icon::before {
+  content: '📝';
   background-image: none;
 }
 </style>
@@ -221,7 +221,7 @@ div.callout-callout-data.callout-style-default .callout-icon::before, div.callou
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./example_pages.html">Example pages</a></li><li class="breadcrumb-item"><a href="./numbas.html"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Embedding Numbas Questions</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./early-section.html">How Do I Use This?</a></li><li class="breadcrumb-item"><a href="./howto.html"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">How do I…?</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -283,7 +283,7 @@ div.callout-callout-data.callout-style-default .callout-icon::before, div.callou
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./howto.html" class="sidebar-item-text sidebar-link">
+  <a href="./howto.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">How do I…?</span></span></a>
   </div>
 </li>
@@ -342,7 +342,7 @@ div.callout-callout-data.callout-style-default .callout-icon::before, div.callou
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./numbas.html" class="sidebar-item-text sidebar-link active">
+  <a href="./numbas.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Embedding Numbas Questions</span></span></a>
   </div>
 </li>
@@ -364,16 +364,17 @@ div.callout-callout-data.callout-style-default .callout-icon::before, div.callou
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#embedding-a-numbas-question" id="toc-embedding-a-numbas-question" class="nav-link active" data-scroll-target="#embedding-a-numbas-question"><span class="header-section-number">11.1</span> Embedding a Numbas question</a></li>
+  <li><a href="#create-a-new-page" id="toc-create-a-new-page" class="nav-link active" data-scroll-target="#create-a-new-page"><span class="header-section-number">3.1</span> …create a new page?</a></li>
+  <li><a href="#set-a-value-once-to-be-used-everywhere" id="toc-set-a-value-once-to-be-used-everywhere" class="nav-link" data-scroll-target="#set-a-value-once-to-be-used-everywhere"><span class="header-section-number">3.2</span> …set a value once to be used everywhere?</a></li>
   </ul>
-<div class="toc-actions"><ul><li><a href="https://github.com/sipbs-compbiol/REPOSITORY/edit/main/numbas.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/sipbs-compbiol/REPOSITORY/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
+<div class="toc-actions"><ul><li><a href="https://github.com/sipbs-compbiol/REPOSITORY/edit/main/howto.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/sipbs-compbiol/REPOSITORY/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./example_pages.html">Example pages</a></li><li class="breadcrumb-item"><a href="./numbas.html"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Embedding Numbas Questions</span></a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./early-section.html">How Do I Use This?</a></li><li class="breadcrumb-item"><a href="./howto.html"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">How do I…?</span></a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Embedding Numbas Questions</span></h1>
+<h1 class="title"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">How do I…?</span></h1>
 </div>
 
 
@@ -390,26 +391,127 @@ div.callout-callout-data.callout-style-default .callout-icon::before, div.callou
 </header>
 
 
-<p><a href="https://numbas.org.uk">Numbas</a> is an open-source e-assessment system aimed at mathematics and other numerate disciplines. It generates <a href="https://scorm.com/scorm-explained/technical-scorm/scorm-2004-overview-for-developers/">SCORM 2004</a>-compliant, self-contained assessment packages, and can present randomised questions for practice and assessment.</p>
+<p>This page is intended as a FAQ/HowTo for some common questions that might come up when using this template for the first time.</p>
+<p>Some <a href="./example_pages.html">example pages</a> dedicated to common tasks and specific kinds of presentation are included later in the template.</p>
+<section id="create-a-new-page" class="level2" data-number="3.1">
+<h2 data-number="3.1" class="anchored" data-anchor-id="create-a-new-page"><span class="header-section-number">3.1</span> …create a new page?</h2>
+<div class="callout callout-style-default callout-tip callout-titled" title="tl;dr">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+tl;dr
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ol type="1">
+<li>Create a new plant text file</li>
+<li>Write Markdown content in your file</li>
+<li>Save your file as a <code>.qmd</code> file (with an appropriate filename)</li>
+<li>Add your filename to the <code>_quarto.yml</code> file in an appropriate place</li>
+<li>Commit your changes</li>
+<li>Push the changes to your repository</li>
+</ol>
+</div>
+</div>
+<p>Assuming that you’re using <code>RStudio</code>, you need to create a new file to hold the Markdown for your page. I usually create a new text file (<code>File -&gt; New File -&gt; Text File</code> or click on the <code>New File</code> icon and select <code>Text File</code>). Write some content in the file and save it as a <code>.qmd</code> file with a meaningful filename (e.g.&nbsp;this file is called <code>howto.qmd</code>).</p>
+<p>At this point, the file you just wrote could be rendered, but it won’t be linked as a page in the book. To link the file, open the <code>_quarto.yml</code> file and look for the section that starts:</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode yaml code-with-copy"><code class="sourceCode yaml"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Define chapters and sections here</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="co">  # [E] CHAPTERS AND SECTIONS</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">chapters</span><span class="kw">:</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="kw">-</span><span class="at"> index.qmd</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="kw">-</span><span class="at"> intro.qmd</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Then enter the name of your file in the appropriate place, e.g.&nbsp;in the <code>early-section.qmd</code> part, as a chapter following <code>tutorial.qmd</code> in the example below:</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode yaml code-with-copy"><code class="sourceCode yaml"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="kw">-</span><span class="at"> </span><span class="fu">part</span><span class="kw">:</span><span class="at"> early-section.qmd</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="at">      </span><span class="fu">chapters</span><span class="kw">:</span><span class="at"> </span></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="at">        </span><span class="kw">-</span><span class="at"> tutorial.qmd</span></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="at">        </span><span class="kw">-</span><span class="at"> howto.qmd</span><span class="co">      # new page added at this line</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="callout callout-style-default callout-warning callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Warning
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>The <code>_quarto.yml</code> file is written in a language called <code>YAML</code> (yet another markup language), and the syntax is important. If you follow the style of the file, you should be fine.</p>
+</div>
+</div>
+<p>and then render the file.</p>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Important
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>To ensure your changes are not lost, <em>commit</em> the changes to your repository (your <code>.qmd</code> file, the <code>_quarto.yml</code> file, and any supporting images or other files), and <em>push</em> them to GitHub.</p>
+</div>
+</div>
+</section>
+<section id="set-a-value-once-to-be-used-everywhere" class="level2" data-number="3.2">
+<h2 data-number="3.2" class="anchored" data-anchor-id="set-a-value-once-to-be-used-everywhere"><span class="header-section-number">3.2</span> …set a value once to be used everywhere?</h2>
+<p>Quarto supports <em>global variables</em>, values that are defined once in a document, and that can be referred to at any point by using a special sequence of characters called a <em>shortcode</em>. The variables are defined in the <code>_variables.yml</code> file, using the <code>YAML</code> markup language.</p>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Tip
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Global variables can be useful for defining details that might be repeated multiple times across your book:</p>
 <ul>
-<li>Find out more about Numbas, including case studies and the latest blog posts, at <a href="https://numbas.org.uk">https://numbas.org.uk</a>.</li>
+<li>administrative information, like contact emails and numbers</li>
+<li>the academic year for a module presentation (saves searching for every mention in all pages)</li>
 </ul>
-<section id="embedding-a-numbas-question" class="level2" data-number="11.1">
-<h2 data-number="11.1" class="anchored" data-anchor-id="embedding-a-numbas-question"><span class="header-section-number">11.1</span> Embedding a Numbas question</h2>
-<p>To embed a Numbas question or exam, <code>Run</code> the question/exam from the Numbas editor, and click on the <code>Share</code> button. This will reveal a URL that can be embedded in your Quarto page.</p>
+</div>
+</div>
+<p>To include the value held in a variable called <code>myvar</code>, you would define this in <code>_variables.yml</code> as:</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode yaml code-with-copy"><code class="sourceCode yaml"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">myvar</span><span class="kw">:</span><span class="at"> </span><span class="st">"The value of the variable"</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>and use the shortcode:</p>
+<div class="sourceCode" id="cb4"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>{{&lt; var myvar &gt;}}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Variables can be named directly, as with <code>myvar</code> above, but they can also be grouped by category as <code>category.variable</code> combinations. For instance, if you wanted to define a set of telephone numbers for three rooms <code>HW312</code>, <code>HW313</code>, and <code>HW314</code>, you could give these the category <code>phone</code>, defining them as, e.g.:</p>
+<div class="sourceCode" id="cb5"><pre class="sourceCode yaml code-with-copy"><code class="sourceCode yaml"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">phone</span><span class="kw">:</span></span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">HW312</span><span class="kw">:</span><span class="at"> 01-234-657890</span></span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">HW313</span><span class="kw">:</span><span class="at"> 01-234-657891</span></span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">HW313</span><span class="kw">:</span><span class="at"> 01-234-657892</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>and use them with shortcode:</p>
+<div class="sourceCode" id="cb6"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>{{&lt; var phone.HW313 &gt;}}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="tabset-margin-container"></div><div class="panel-tabset">
-<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true" aria-current="page">Appearance</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false">Markdown</a></li></ul>
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true" aria-current="page">Appearance</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false">Markdown</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-3" role="tab" aria-controls="tabset-1-3" aria-selected="false"><code>_variables.yml</code></a></li></ul>
 <div class="tab-content">
 <div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
-<iframe src="https://numbas.mathcentre.ac.uk/question/177136/example-question-for-embedding-demo/embed/?token=4aa212ef-75db-457e-83a1-4cba63919c8b" width="780" height="500"></iframe>
+<p>This is <code>global_variable</code>: This is an example of a global variable.</p>
+<p>This is <code>category.value1</code>: This is an example of a <code>category.value</code> variable.</p>
+<p>This is <code>category.value2</code>: This is another example of a <code>category.value</code> variable.</p>
 </div>
 <div id="tabset-1-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-2-tab">
-<div class="sourceCode" id="cb1"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">iframe</span><span class="ot"> src</span><span class="op">=</span><span class="st">"[URL]"</span><span class="ot"> width</span><span class="op">=</span><span class="st">"780"</span><span class="ot"> height</span><span class="op">=</span><span class="st">"500"</span><span class="dt">&gt;&lt;/</span><span class="kw">iframe</span><span class="dt">&gt;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb7"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>This is <span class="in">`global_variable`</span>: {{&lt; var global_variable &gt;}}.</span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a>This is <span class="in">`category.value1`</span>: {{&lt; var category.value1 &gt;}}.</span>
+<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a>This is <span class="in">`category.value2`</span>: {{&lt; var category.value2 &gt;}}.</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div id="tabset-1-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-3-tab">
+<div class="sourceCode" id="cb8"><pre class="sourceCode yaml code-with-copy"><code class="sourceCode yaml"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Example variables for the howto page</span></span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a><span class="fu">global_variable</span><span class="kw">:</span><span class="at"> </span><span class="st">"This is an example of a global variable"</span></span>
+<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a><span class="fu">category</span><span class="kw">:</span></span>
+<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">value1</span><span class="kw">:</span><span class="at"> </span><span class="st">"This is an example of a `category.value` variable"</span></span>
+<span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">value2</span><span class="kw">:</span><span class="at"> </span><span class="st">"This is another example of a `category.value` variable"</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</div>
+</div>
 
 
-</div>
-</div>
-</div>
 </section>
 
 </main> <!-- /main -->
@@ -814,13 +916,13 @@ div.callout-callout-data.callout-style-default .callout-icon::before, div.callou
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./shinylive.html" class="pagination-link" aria-label="Using `shinylive`">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Using <code>shinylive</code></span></span>
+      <a href="./tutorial.html" class="pagination-link" aria-label="Getting started">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Getting started</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./references.html" class="pagination-link" aria-label="References">
-        <span class="nav-page-text">References</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./links.html" class="pagination-link" aria-label="Useful links">
+        <span class="nav-page-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Useful links</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
@@ -832,7 +934,7 @@ div.callout-callout-data.callout-style-default .callout-icon::before, div.callou
 </div>   
     <div class="nav-footer-center">
       &nbsp;
-    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/sipbs-compbiol/REPOSITORY/edit/main/numbas.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/sipbs-compbiol/REPOSITORY/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
+    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/sipbs-compbiol/REPOSITORY/edit/main/howto.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/sipbs-compbiol/REPOSITORY/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
     <div class="nav-footer-right">
 <p>This book was built with <a href="https://quarto.org/">Quarto</a>.</p>
 </div>
