@@ -42,6 +42,7 @@ book:
       chapters: 
         - tutorial.qmd
         - howto.qmd
+        - links.qmd
     
     - part: example_pages.qmd
       chapters: 
