@@ -7,7 +7,7 @@ Some [example pages](example_pages.qmd) dedicated to common tasks and specific k
 ## …create a new page?
 
 ::: { .callout-tip title="tl;dr" }
-1. Create a new plant text file
+1. Create a new plain text file
 2. Write Markdown content in your file
 3. Save your file as a `.qmd` file (with an appropriate filename)
 4. Add your filename to the `_quarto.yml` file in an appropriate place
